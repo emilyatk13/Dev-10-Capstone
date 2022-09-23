@@ -22,21 +22,12 @@ We seek to provide an analysis that the government can apply should there ever b
 ## Datasets
 **Small Business Administration**. (July 4, 2022). Paycheck Protection Program - Freedom of Information Act. Retrieved
 September 19, 2022 from data.sba.gov website: https://data.sba.gov/dataset/ppp-foia
-- The Small Business Administration provides data on the government Paycheck Protection Program initialized in
-2020. Data provided here can be downloaded in CSV format. Due to the large size of the overall file, SBA has
-broken the data down into 13 CSV files that can then be remerged.
+- The Small Business Administration provides data on the government Paycheck Protection Program initialized in 2020. Data provided here can be downloaded in CSV format. Due to the large size of the overall file, SBA has broken the data down into 13 CSV files that can then be remerged.
 
 **United States Census Bureau**. (October 28, 2021). Annual Business Survey. Retrieved September 20, 2022 from
 www.census.gov website: https://www.census.gov/data/developers/data-sets/abs.html
-- The United States Census Bureau conducts an Annual Business Survey to provide select economic and
-demographic information for businesses and business owners. The Company Summary API provides data for
-employer businesses by sector, sex, ethnicity, race, veteran status, years in business, receipts size of firm, and
-employment size of firm for states within the U.S.
+- The United States Census Bureau conducts an Annual Business Survey to provide select economic and demographic information for businesses and business owners. The Company Summary API provides data for employer businesses by sector, sex, ethnicity, race, veteran status, years in business, receipts size of firm, and employment size of firm for states within the U.S.
 
 **United States Department of Labor**. (July 7, 2022). Unemployment Insurance Weekly Claims Data. Retrieved September
 20, 2022 from oui.doleta.gov website: https://oui.doleta.gov/unemploy/claims.asp
-- The United States Department of Labor Employment & Training Administration updates weekly claims for
-Unemployment Insurance. The Department of Labor tracks both Initial Claims (new claims) as well as Continued
-Claims to track the number of persons claiming unemployment benefits. Claims information can be accessed at
-a National or State level for a specified year range which can then be output either as an HTML webpage, Excel
-document, or XML document.
+- The United States Department of Labor Employment & Training Administration updates weekly claims for Unemployment Insurance. The Department of Labor tracks both Initial Claims (new claims) as well as Continued Claims to track the number of persons claiming unemployment benefits. Claims information can be accessed at a National or State level for a specified year range which can then be output either as an HTML webpage, Excel document, or XML document.
