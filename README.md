@@ -36,6 +36,12 @@ www.census.gov website: https://www.census.gov/data/developers/data-sets/abs.htm
 ## Project Structure
 ![DataPlatform drawio](https://user-images.githubusercontent.com/104226913/191992362-0dceb020-bb0f-4bcd-833e-7cd9d850884e.png)
 
+**Static Data Stream**
+![DataFlow Diagram drawio (1)](https://user-images.githubusercontent.com/104226913/191999573-d06c4cb6-dbe2-43e5-95e3-44535fdccd5a.png)
+
+**Unemployment Data Stream**
+![Data_Stream drawio](https://user-images.githubusercontent.com/104226913/191998353-b38502ee-bfcc-446a-a7a0-3c6b89621907.png)
+
 ## SQL Database
 ![ERD drawio](https://user-images.githubusercontent.com/104226913/191992637-83fec9f7-ca53-455f-8a51-d125f0492348.png)
 
