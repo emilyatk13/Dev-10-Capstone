@@ -17,6 +17,7 @@ We seek to provide an analysis that the government can apply should there ever b
 ## Table of Contents
 - [Datasets](#Datasets)
 - [Project Structure](#Project-Structure)
+- [SQL Database](#SQL-Database)
 
 
 ## Datasets
@@ -31,3 +32,10 @@ www.census.gov website: https://www.census.gov/data/developers/data-sets/abs.htm
 **United States Department of Labor**. (July 7, 2022). Unemployment Insurance Weekly Claims Data. Retrieved September
 20, 2022 from oui.doleta.gov website: https://oui.doleta.gov/unemploy/claims.asp
 - The United States Department of Labor Employment & Training Administration updates weekly claims for Unemployment Insurance. The Department of Labor tracks both Initial Claims (new claims) as well as Continued Claims to track the number of persons claiming unemployment benefits. Claims information can be accessed at a National or State level for a specified year range which can then be output either as an HTML webpage, Excel document, or XML document.
+
+## Project Structure
+![DataPlatform drawio](https://user-images.githubusercontent.com/104226913/191992362-0dceb020-bb0f-4bcd-833e-7cd9d850884e.png)
+
+## SQL Database
+![ERD drawio](https://user-images.githubusercontent.com/104226913/191992637-83fec9f7-ca53-455f-8a51-d125f0492348.png)
+
