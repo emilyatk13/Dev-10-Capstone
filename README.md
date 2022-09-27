@@ -44,6 +44,6 @@ www.census.gov website: https://www.census.gov/data/developers/data-sets/abs.htm
 ![Data_Stream drawio](https://user-images.githubusercontent.com/104226913/191998353-b38502ee-bfcc-446a-a7a0-3c6b89621907.png)
 
 ## SQL Database
-![ERD drawio](https://user-images.githubusercontent.com/104226913/192371370-6d0cb804-70e8-4e54-afad-144692caf6f2.png)
+![ERD drawio (2)](https://user-images.githubusercontent.com/104226913/192612938-f5a6d97a-7c89-4c08-9d8f-12cef21a3de6.png)
 
 
