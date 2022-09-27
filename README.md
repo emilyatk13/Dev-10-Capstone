@@ -34,7 +34,7 @@ www.census.gov website: https://www.census.gov/data/developers/data-sets/abs.htm
 - The United States Department of Labor Employment & Training Administration updates weekly claims for Unemployment Insurance. The Department of Labor tracks both Initial Claims (new claims) as well as Continued Claims to track the number of persons claiming unemployment benefits. Claims information can be accessed at a National or State level for a specified year range which can then be output either as an HTML webpage, Excel document, or XML document.
 
 ## Project Structure
-![DataPlatform drawio](https://user-images.githubusercontent.com/104226913/191992362-0dceb020-bb0f-4bcd-833e-7cd9d850884e.png)
+![DataPlatform drawio (1)](https://user-images.githubusercontent.com/104226913/192378502-6ecc3060-5a1a-48d1-b2c8-972b8c044066.png)
 
 **Static Data Stream** <br>
 ![DataFlow Diagram drawio (2)](https://user-images.githubusercontent.com/104226913/192000149-b6e06fd3-0e6a-4860-8f0a-8bc1d0a499c8.png)
