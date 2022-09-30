@@ -52,15 +52,15 @@ After retrieving all relevant data for our research from these U.S. departments,
 
 ## SQL Database
 This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relationship Diagram has been provided at the end of this section for clarity and can also be found at the end of this section. The combination of the following tables serve to create our database:
-  1. `State`:
-  2. `Industry`:
-  3. `DemographicInfo`:
-  4. `BusinessAgeDescription`:
-  5. `BusinessType`:
-  6. `Unemployment`:
-  7. `CensusInfo`:
-  8. `PPPBorrower`:
-  9. `PPPLender`:
-  10. `PPPLoanInfo`:
+  1. `State`: This table contains the `StateName` and `StateAcronym` for the U.S. Both name and acronym have been included to ensure that each dataset can communicate properly.
+  2. `Industry`: This table contains the `IndustryName` for each category of industry within the North American Industry Classification System (NAICS) used within the Census Data.
+  3. `DemographicInfo`: This table contains the `Race`, `Ethnicity`, and `Sex` for business owners within the U.S. Column names for this table have been standardized to work with both the Census and PPP data, as there were discrepencies in the naming conventions from each dataset.
+  4. `BusinessAgeDescription`: This table contains the `BusinessAgeDescription` showing the amount of time a business has been operating at the time of application for the PPP loan.
+  5. `BusinessType`: This table contains the `BusinessTypeDescription` that provides the organizational structure of the business applying for the PPP loan.
+  6. `Unemployment`: This table provides information from the Department of Labor Unemployment Claims dataset. This table includes: a `StateID` foreign key referenceing the `State` table, `FiledWeekEnded` date that references the end-date of a week for Unemployment Insurance (UI) claims being filed, `ReflectingWeekEnded` date that references the end-date of a week for UI claims that are being counted in the dataset, `InitialClaims` that represents the number of new UI claims in a given week, `ContinuedClaims` that references the number of UI claims that have been filed in a previous week and are still receiving benefits, `CoveredEmployment` which represents the number of individuals that could be eligible for UI in a given week, and `InsuredUnemploymentRate` which references the number of continued claims divided by the total covered employment of a given week.
+  7. `CensusInfo`: This table
+  8. `PPPBorrower`: This table
+  9. `PPPLender`: This table
+  10. `PPPLoanInfo`: This table
 ![ERD drawio (5)](https://user-images.githubusercontent.com/104226913/193344060-02c9fcb8-198a-4dd3-8985-231f168f81b2.png)
 *ERD of the SQL database structure.*
