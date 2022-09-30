@@ -62,5 +62,5 @@ This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relations
   8. `PPPBorrower`:
   9. `PPPLender`:
   10. `PPPLoanInfo`:
-![ERD drawio (3)](https://user-images.githubusercontent.com/104226913/192618805-d827f6b2-25e0-453a-9f59-462f6657f5f3.png)
+![ERD drawio (4)](https://user-images.githubusercontent.com/104226913/193343943-80a1662e-6499-4240-8100-f9feae9633f9.png)
 *ERD of the SQL database structure.*
