@@ -4,15 +4,14 @@ As the global pandemic COVID 19 hit the U.S. Economy in 2019, the United States 
 We seek to provide an analysis that the government can apply should there ever be a need to implement something like the Paycheck Protection Program again. We will start with some exploratory research, aiming to understand what this program looked like in practice. In order to contextualize the impact of the PPP, we will also analyze contemporaneous unemployment data. From there, we will implement predictive modeling of data from the PPP to determine key factors in forecasting which borrowers will pay their loans. Our main questions that will guide this research are below.
 
 ## Essential Questions
-1. Our team will analyze three datasets to answer the following questions:
-2. What types of business owners (gender, race, geography) received Payment Protection Plan loans? 
-3. Which industries (based on Census NAICS codes) received the largest amount of loans?
-4. How did businesses in each state and industry use the loans they received?  
-5. Was the quantity of loans given proportional to the demographic breakdown of business in each state/industry?
-6. Which businesses in each state/industry paid off their loans? Which businesses had their loans forgiven?
-7. Who were the top lenders to businesses in each state and industry?
-8. What is the relationship between the number of PPP loans given by state and that state’s unemployment numbers?
-9. Based on predictive modeling analysis, how likely is a particular business to pay back their loan?
+1. What types of business owners (gender, race, geography) received Payment Protection Plan loans? 
+2. Which industries (based on Census NAICS codes) received the largest amount of loans?
+3. How did businesses in each state and industry use the loans they received?  
+4. Was the quantity of loans given proportional to the demographic breakdown of business in each state/industry?
+5. Which businesses in each state/industry paid off their loans? Which businesses had their loans forgiven?
+6. Who were the top lenders to businesses in each state and industry?
+7. What is the relationship between the number of PPP loans given by state and that state’s unemployment numbers?
+8. Based on predictive modeling analysis, how likely is a particular business to pay back their loan?
 
 ## Table of Contents
 - [Datasets](#Datasets)
