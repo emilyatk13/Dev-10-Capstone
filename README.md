@@ -37,7 +37,7 @@ www.census.gov website: https://www.census.gov/data/developers/data-sets/abs.htm
 ![DataPlatform-Page-1 drawio](https://user-images.githubusercontent.com/104226913/192575526-b12ce4d0-dd1c-46cc-be9b-426d1a910c20.png)
 *Diagram outlining the data processing pipeline and necessary components.*
 
-# Data Structure & ETL
+## Data Structure & ETL
 A comprehensive guide of our ETL process can be found at [INSERT LINK TO REPEATABLEETLREPORT.PDF], All data has been collected from U.S. Government agencies to ensure credibility. Information regarding the PPP has been obtained from the Small Business Administration. Information regarding the Business/Business Owner Demographics have been obtained from the Census Annual Business Survey. Information regarding Uemployment has been obtained from the Department of Labor Statistics. More information on these datasets can be found [here](#Datasets).
 
 After retrieving all relevant data for our research from these U.S. departments, we then begin the process of transformation to populate our SQL database. Our transformation of the data utilized Python Pandas & Apache Spark. General Transformation practices included removing null values, dropping unnecessary columns, removing aggregations already present so as to not skew our results, converting data into an appropriate type, and renaming columns for clarity. For the PPP datasets, we made the decision to combine the 13 csv files into a larger single csv so as it could be called upon more reliably. With transformation of the data completed, we then deploy all the data into our SQL Database through the use of Spark Databricks. 
@@ -51,7 +51,7 @@ After retrieving all relevant data for our research from these U.S. departments,
 ![Data_Stream drawio](https://user-images.githubusercontent.com/104226913/191998353-b38502ee-bfcc-446a-a7a0-3c6b89621907.png)
 
 ## SQL Database
-This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relationship Diagram has been provided at the end of this section for clarity and can also be found [here](#ERD-drawio-(3)). The combination of the following tables serve to create our database:
+This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relationship Diagram has been provided at the end of this section for clarity and can also be found at the end of this section. The combination of the following tables serve to create our database:
   1. `State`:
   2. `Industry`:
   3. `DemographicInfo`:
