@@ -16,7 +16,7 @@ We seek to provide an analysis that the government can apply should there ever b
 ## Table of Contents
 - [Datasets](#Datasets)
 - [Project Structure](#Project-Structure)
-- [Data Structure & ETL](#Data-Structure-&-ETL)
+- [Data Structure & ETL](#data-structure--etl)
 - [SQL Database](#SQL-Database)
 
 
