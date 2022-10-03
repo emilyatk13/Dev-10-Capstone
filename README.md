@@ -14,10 +14,21 @@ We seek to provide an analysis that the government can apply should there ever b
 8. Based on predictive modeling analysis, how likely is a particular business to pay back their loan?
 
 ## Table of Contents
+- [Reporting](#Reporting)
 - [Datasets](#Datasets)
 - [Project Structure](#Project-Structure)
 - [Data Structure & ETL](#data-structure--etl)
 - [SQL Database](#SQL-Database)
+
+
+#Reporting
+The procedures and findings of this project can be found in one of several reports found under /ProjectSpecifications/ directories. Summaries of the reports are the following:
+
+ 1. 'ExecutiveSummary.pdf': Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources/
+ 2. 'ProjectManagementPlan.xlsx': Excel table with teammembers breakdown of daily/hourly assignments from start to finish.
+ 3. 'DataSources.pdf': PDF citing data sources. 
+ 4. 'DataPlatformDiagram.pdf': Diagram outlining the data processing pipeline and necessary components.
+ 5. 'DataFlowDiagram.png' Diagram outlining the sequence of data transformation.
 
 
 ## Datasets
@@ -64,3 +75,5 @@ This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relations
   10. `PPPLoanInfo`: This table
 ![ERD drawio (5)](https://user-images.githubusercontent.com/104226913/193344060-02c9fcb8-198a-4dd3-8985-231f168f81b2.png)
 *ERD of the SQL database structure.*
+
+
