@@ -21,7 +21,7 @@ We seek to provide an analysis that the government can apply should there ever b
 - [SQL Database](#SQL-Database)
 
 
-#Reporting
+## Reporting
 The procedures and findings of this project can be found in one of several reports found under /ProjectSpecifications/ directories. Summaries of the reports are the following:
 
  1. 'ExecutiveSummary.pdf': Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources/
