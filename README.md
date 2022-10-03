@@ -24,11 +24,11 @@ We seek to provide an analysis that the government can apply should there ever b
 ## Reporting
 The procedures and findings of this project can be found in one of several reports found under /ProjectSpecifications/ directories. Summaries of the reports are the following:
 
- 1. 'ExecutiveSummary.pdf': Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources/
- 2. 'ProjectManagementPlan.xlsx': Excel table with teammembers breakdown of daily/hourly assignments from start to finish.
- 3. 'DataSources.pdf': PDF citing data sources. 
- 4. 'DataPlatformDiagram.pdf': Diagram outlining the data processing pipeline and necessary components.
- 5. 'DataFlowDiagram.png' Diagram outlining the sequence of data transformation.
+ 1. [ExecutiveSummary.pdf](ProjectSpecifications/ExecutiveSummary.pdf): Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources/
+ 2. [ProjectManagementPlan.xlsx](ProjectSpecifications/ProjectManagementPlan.xlsx): Excel table with teammembers breakdown of daily/hourly assignments from start to finish.
+ 3. [DataSources.pdf](ProjectSpecifications/DataSources.pdf): PDF citing data sources. 
+ 4. [DataPlatformDiagram.png](ProjectSpecifications/DataPlatformDiagram.png): Diagram outlining the data processing pipeline and necessary components.
+ 5. [DataFlowDiagram.png](ProjectSpecifications/DataFlowDiagram.png): Diagram outlining the sequence of data transformation.
 
 
 ## Datasets
