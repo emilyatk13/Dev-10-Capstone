@@ -14,10 +14,21 @@ We seek to provide an analysis that the government can apply should there ever b
 8. Based on predictive modeling analysis, how likely is a particular business to pay back their loan?
 
 ## Table of Contents
+- [Reporting](#Reporting)
 - [Datasets](#Datasets)
 - [Project Structure](#Project-Structure)
 - [Data Structure & ETL](#data-structure--etl)
 - [SQL Database](#SQL-Database)
+
+
+## Reporting
+The procedures and findings of this project can be found in one of several reports found under /ProjectSpecifications/ directories. Summaries of the reports are the following:
+
+ 1. [ExecutiveSummary.pdf](ProjectSpecifications/ExecutiveSummary.pdf): Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources/
+ 2. [ProjectManagementPlan.xlsx](ProjectSpecifications/ProjectManagementPlan.xlsx): Excel table with teammembers breakdown of daily/hourly assignments from start to finish.
+ 3. [DataSources.pdf](ProjectSpecifications/DataSources.pdf): PDF citing data sources. 
+ 4. [DataPlatformDiagram.png](ProjectSpecifications/DataPlatformDiagram.png): Diagram outlining the data processing pipeline and necessary components.
+ 5. [DataFlowDiagram.png](ProjectSpecifications/DataFlowDiagram.png): Diagram outlining the sequence of data transformation.
 
 
 ## Datasets
@@ -52,15 +63,17 @@ After retrieving all relevant data for our research from these U.S. departments,
 
 ## SQL Database
 This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relationship Diagram has been provided at the end of this section for clarity and can also be found at the end of this section. The combination of the following tables serve to create our database:
-  1. `State`:
-  2. `Industry`:
-  3. `DemographicInfo`:
-  4. `BusinessAgeDescription`:
-  5. `BusinessType`:
-  6. `Unemployment`:
-  7. `CensusInfo`:
-  8. `PPPBorrower`:
-  9. `PPPLender`:
-  10. `PPPLoanInfo`:
+  1. `State`: This table contains the `StateName` and `StateAcronym` for the U.S. Both name and acronym have been included to ensure that each dataset can communicate properly.
+  2. `Industry`: This table contains the `IndustryName` for each category of industry within the North American Industry Classification System (NAICS) used within the Census Data.
+  3. `DemographicInfo`: This table contains the `Race`, `Ethnicity`, and `Sex` for business owners within the U.S. Column names for this table have been standardized to work with both the Census and PPP data, as there were discrepencies in the naming conventions from each dataset.
+  4. `BusinessAgeDescription`: This table contains the `BusinessAgeDescription` showing the amount of time a business has been operating at the time of application for the PPP loan.
+  5. `BusinessType`: This table contains the `BusinessTypeDescription` that provides the organizational structure of the business applying for the PPP loan.
+  6. `Unemployment`: This table provides information from the Department of Labor Unemployment Claims dataset. This table includes: a `StateID` foreign key referenceing the `State` table, `FiledWeekEnded` date that references the end-date of a week for Unemployment Insurance (UI) claims being filed, `ReflectingWeekEnded` date that references the end-date of a week for UI claims that are being counted in the dataset, `InitialClaims` that represents the number of new UI claims in a given week, `ContinuedClaims` that references the number of UI claims that have been filed in a previous week and are still receiving benefits, `CoveredEmployment` which represents the number of individuals that could be eligible for UI in a given week, and `InsuredUnemploymentRate` which references the number of continued claims divided by the total covered employment of a given week.
+  7. `CensusInfo`: This table contains a `StateID` foreign key referencing the `State` table, an `IndustryID` foreign key referencing the `Industry` table, a `DemographicID` foreign key referencing the `DemographicInfo` table, and the `NumberOfBusinesses` that references the total number of businesses that are located wihin a particular `CensusID`.
+  8. `PPPBorrower`: This table contains information from the PPP dataset including: `BorrowerName` representing the name of the individual or business that applied for the loan, `CensusID` foreign key referencing the `CensusInfo` table, `BusinessAgeDescID` foreign key referencing the `BusinessAgeDescription` table, `JobsReported` which represents the number of employees within the applicants business, `BusinessTypeID` foreign key referencing the `BusinessType` table, `HubzoneIndicator` which represents whether a business is within a 'Historically Underutilized Business Zone', and `LMIIndicator` which represents whether the business classifies within a 'Low-and-Moderate Income' community.
+  9. `PPPLender`: This table contains information from the PPP dataset including: `ServicingLenderName` which represents the institution that currently holds the loan given to a particular business, and `OriginatingLenderName` which represents the institution that initally held the loan at the time of loan approval.
+  10. `PPPLoanInfo`: This table
 ![ERD drawio (5)](https://user-images.githubusercontent.com/104226913/193344060-02c9fcb8-198a-4dd3-8985-231f168f81b2.png)
 *ERD of the SQL database structure.*
+
+
