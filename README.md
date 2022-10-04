@@ -89,6 +89,9 @@ This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relations
 
 ## Visualization
 
+The graphs and visualizations for the Dash environment are made using plotly express. plotly express is used for it's native integration with Dash, a product created by Plotly. They are created inside Python, sent as a raw image, and directly referenced by url. In the Dash environment, when the user selects different dropdowns, the visuals are updated and auto-repopulated with the correct information.
+
+For the visualization of the Machine Learning model, seaborne--a Python data visualization library based on matplotlib--is utilized. It provides a high-level interface for drawing attractive and informative statistical graphics. seaborne is chosen as it integrates closely with pandas data structures. For these images they are created inside Python and exported as .png files where the raw image is directly referenced by url. 
 
 ## Dash Deployment
 
