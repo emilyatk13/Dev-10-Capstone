@@ -83,8 +83,7 @@ This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relations
 
 
 ## Machine Learning
-
-
+Throughout our analysis of the PPP data, we anchored our focus around what happened during the loan program. Who received the loans, how did they use it, was there a connection to unemployment rates? For machine learning, we shifted from focusing on what the loan program was like in practice to how to optimize future implementation of a similar program. Our group created a model that predicts whether or not a borrower will pay back their loan based on key information including the industry, age of the business, and the demographics of the owner. We ran an algorithm with 'K Nearest Neighbors' with the goal of producing the fewest false positives as lenders are risk averse. Should the United States ever run such a program again, the implementation of our model would allow them to select borrowers most likely to pay back their loans. Our full Machine Learning code with information comments can be found [here](code/PPP_ml_implementation.ipynb). 
 
 ## Visualization
 
