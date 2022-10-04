@@ -1,0 +1,51 @@
+StateAcronym,StateName,Percentage
+AK,Alaska,0.18
+AL,Alabama,1.97
+AR,Arkansas,1.22
+AZ,Arizona,1.91
+CA,California,6.04
+CO,Colorado,2.28
+CT,Connecticut,1.78
+DE,Delaware,0.66
+FL,Florida,5.03
+GA,Georgia,3.53
+HI,Hawaii,0.45
+IA,Iowa,0.91
+ID,Idaho,0.44
+IL,Illinois,4.04
+IN,Indiana,2.04
+KS,Kansas,1.22
+KY,Kentucky,1.79
+LA,Louisiana,2.43
+MA,Massachusetts,3.11
+MD,Maryland,2.01
+ME,Maine,0.72
+MI,Michigan,2.85
+MN,Minnesota,2.1
+MO,Missouri,1.81
+MS,Mississippi,1.81
+MT,Montana,0.56
+NC,North Carolina,2.0
+ND,North Dakota,0.37
+NE,Nebraska,0.67
+NH,New Hampshire,0.53
+NJ,New Jersey,3.01
+NM,New Mexico,1.13
+NV,Nevada,1.74
+NY,New York,5.55
+OH,Ohio,3.11
+OK,Oklahoma,1.84
+OR,Oregon,1.88
+PA,Pennsylvania,4.04
+RI,Rhode Island,0.63
+SC,South Carolina,1.73
+SD,South Dakota,0.35
+TN,Tennessee,2.43
+TX,Texas,6.37
+UT,Utah,0.43
+VA,Virginia,2.74
+VT,Vermont,0.5
+WA,Washington,2.44
+WI,Wisconsin,2.1
+WV,West Virginia,1.01
+WY,Wyoming,0.52

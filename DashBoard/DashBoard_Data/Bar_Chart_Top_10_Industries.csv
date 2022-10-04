@@ -1,0 +1,901 @@
+IndustryName,StateName,Cummulative Loan Amount ($),Cummulative Loan Amount Billions
+"Professional, Scientific, and Technical Services",California,7045113458.32,7.05B
+Accommodation and Food Services,California,6716304036.59,6.72B
+"Professional, Scientific, and Technical Services",New York,6665877739.05,6.67B
+Health Care and Social Assistance,New York,6501217695.39,6.5B
+Health Care and Social Assistance,California,6081378083.64,6.08B
+Construction,California,5990159494.41,5.99B
+Construction,New York,5677359901.07,5.68B
+Accommodation and Food Services,New York,5125005693.76,5.13B
+"Professional, Scientific, and Technical Services",Texas,5084182317.18,5.08B
+Manufacturing,California,4981385850.77,4.98B
+Construction,Texas,4978681875.42,4.98B
+Health Care and Social Assistance,Texas,4700482973.91,4.7B
+Accommodation and Food Services,Texas,4281558803.7,4.28B
+Manufacturing,Michigan,4101213687.15,4.1B
+Manufacturing,Ohio,4018070651.01,4.02B
+Manufacturing,New York,3761446628.94,3.76B
+Construction,Pennsylvania,3695995455.2,3.7B
+Health Care and Social Assistance,Pennsylvania,3511335468.63,3.51B
+Manufacturing,Pennsylvania,3505082469.82,3.51B
+Retail Trade,California,3470790101.73,3.47B
+"Professional, Scientific, and Technical Services",Florida,3378737644.96,3.38B
+Manufacturing,Texas,3374563855.92,3.37B
+Retail Trade,New York,3335912736.22,3.34B
+Construction,Florida,3193858209.12,3.19B
+"Professional, Scientific, and Technical Services",Virginia,3145907897.31,3.15B
+Health Care and Social Assistance,Florida,3117294961.31,3.12B
+"Professional, Scientific, and Technical Services",Pennsylvania,3101077057.99,3.1B
+Accommodation and Food Services,Florida,3055364767.44,3.06B
+Health Care and Social Assistance,Ohio,3038993167.4,3.04B
+Wholesale Trade,California,2949014479.26,2.95B
+Construction,Ohio,2899716295.46,2.9B
+Health Care and Social Assistance,Michigan,2752110321.81,2.75B
+Construction,Washington,2711025367.66,2.71B
+Wholesale Trade,New York,2683426331.9,2.68B
+"Professional, Scientific, and Technical Services",Massachusetts,2641026241.73,2.64B
+Retail Trade,Texas,2618152952.69,2.62B
+Health Care and Social Assistance,Massachusetts,2600602211.02,2.6B
+Manufacturing,Wisconsin,2585124440.28,2.59B
+Construction,Michigan,2556671406.1,2.56B
+Construction,Massachusetts,2501740221.76,2.5B
+"Professional, Scientific, and Technical Services",Ohio,2490361796.32,2.49B
+Administrative and Support and Waste Management and Remediation Services,California,2489929616.46,2.49B
+"Professional, Scientific, and Technical Services",Georgia,2408988268.34,2.41B
+Administrative and Support and Waste Management and Remediation Services,New York,2356706293.2,2.36B
+"Professional, Scientific, and Technical Services",Michigan,2316020726.74,2.32B
+Manufacturing,Indiana,2132006838.36,2.13B
+Accommodation and Food Services,Massachusetts,2096001799.72,2.1B
+Accommodation and Food Services,Washington,2064425655.14,2.06B
+Health Care and Social Assistance,Washington,2043214754.1,2.04B
+Administrative and Support and Waste Management and Remediation Services,Texas,2037533630.71,2.04B
+"Professional, Scientific, and Technical Services",Maryland,2030057576.9,2.03B
+Transportation and Warehousing,Texas,1952266946.79,1.95B
+Construction,Georgia,1911278798.11,1.91B
+Retail Trade,Pennsylvania,1909644668.05,1.91B
+Health Care and Social Assistance,Georgia,1908371350.04,1.91B
+Accommodation and Food Services,Michigan,1902081127.21,1.9B
+Accommodation and Food Services,Pennsylvania,1886617310.47,1.89B
+Transportation and Warehousing,New York,1868423656.04,1.87B
+Manufacturing,Massachusetts,1841464592.27,1.84B
+Accommodation and Food Services,Ohio,1839701630.99,1.84B
+Retail Trade,Florida,1833232086.06,1.83B
+Mining,Texas,1814792041.17,1.81B
+Construction,Colorado,1812584172.05,1.81B
+Construction,Maryland,1805472347.9,1.81B
+Wholesale Trade,Texas,1801940954.56,1.8B
+Health Care and Social Assistance,Virginia,1784724554.89,1.78B
+Construction,Missouri,1772446795.54,1.77B
+Transportation and Warehousing,California,1766148119.98,1.77B
+Manufacturing,Minnesota,1760500692.32,1.76B
+"Professional, Scientific, and Technical Services",Washington,1760084094.33,1.76B
+"Professional, Scientific, and Technical Services",Illinois,1757749843.34,1.76B
+Construction,Virginia,1736757237.3,1.74B
+Construction,Minnesota,1724575775.85,1.72B
+"Professional, Scientific, and Technical Services",Colorado,1702498099.41,1.7B
+Health Care and Social Assistance,Minnesota,1685057959.43,1.69B
+Accommodation and Food Services,Georgia,1669186593.87,1.67B
+Accommodation and Food Services,Colorado,1664715289.59,1.66B
+Construction,Indiana,1650303640.86,1.65B
+Retail Trade,Michigan,1638266093.78,1.64B
+Real Estate Rental and Leasing,California,1638219006.5,1.64B
+Health Care and Social Assistance,Maryland,1625344931.13,1.63B
+Educational Services,New York,1618866402.14,1.62B
+Manufacturing,Georgia,1583093873.44,1.58B
+Health Care and Social Assistance,Arizona,1582555313.33,1.58B
+Accommodation and Food Services,Illinois,1572396447.89,1.57B
+Health Care and Social Assistance,Illinois,1555804795.44,1.56B
+Retail Trade,Ohio,1540923004.27,1.54B
+Construction,Wisconsin,1531940971.16,1.53B
+Manufacturing,Washington,1524966078.15,1.52B
+Construction,Arizona,1508611661.81,1.51B
+Accommodation and Food Services,Tennessee,1500525908.88,1.5B
+Health Care and Social Assistance,Tennessee,1497668786.83,1.5B
+Administrative and Support and Waste Management and Remediation Services,Pennsylvania,1484835577.69,1.48B
+Health Care and Social Assistance,Missouri,1475339966.58,1.48B
+Administrative and Support and Waste Management and Remediation Services,Florida,1475186044.55,1.48B
+Health Care and Social Assistance,Indiana,1445021280.37,1.45B
+Real Estate Rental and Leasing,New York,1443546569.02,1.44B
+Construction,Illinois,1435954779.25,1.44B
+Health Care and Social Assistance,Colorado,1430347903.86,1.43B
+Wholesale Trade,Ohio,1419303344.92,1.42B
+Construction,Tennessee,1405592467.32,1.41B
+"Professional, Scientific, and Technical Services",Minnesota,1399374147.56,1.4B
+Health Care and Social Assistance,Connecticut,1375042538.94,1.38B
+"Professional, Scientific, and Technical Services",New Jersey,1370873282.39,1.37B
+Educational Services,California,1362817843.32,1.36B
+Manufacturing,Missouri,1361071486.66,1.36B
+Retail Trade,Georgia,1354143242.76,1.35B
+Accommodation and Food Services,Virginia,1348587611.71,1.35B
+Wholesale Trade,Pennsylvania,1339012133.35,1.34B
+Information,California,1326735615.46,1.33B
+Manufacturing,Florida,1311103133.77,1.31B
+Real Estate Rental and Leasing,Texas,1308561770.73,1.31B
+Accommodation and Food Services,Arizona,1305030402.89,1.31B
+Health Care and Social Assistance,Louisiana,1303195313.62,1.3B
+Health Care and Social Assistance,North Carolina,1290177783.59,1.29B
+Manufacturing,North Carolina,1271431570.58,1.27B
+Health Care and Social Assistance,Wisconsin,1261010916.75,1.26B
+Health Care and Social Assistance,New Jersey,1254008994.94,1.25B
+Health Care and Social Assistance,Oregon,1248424867.02,1.25B
+"Professional, Scientific, and Technical Services",Arizona,1237063476.49,1.24B
+Transportation and Warehousing,Florida,1232878402.47,1.23B
+Construction,Oregon,1214299474.62,1.21B
+Manufacturing,Connecticut,1214096599.48,1.21B
+Accommodation and Food Services,Missouri,1210767195.57,1.21B
+"Professional, Scientific, and Technical Services",Missouri,1208086393.35,1.21B
+Construction,Louisiana,1204103476.53,1.2B
+Wholesale Trade,Florida,1182224846.69,1.18B
+"Agriculture, Forestry, Fishing and Hunting",California,1180887981.76,1.18B
+Retail Trade,Washington,1180019505.35,1.18B
+Administrative and Support and Waste Management and Remediation Services,Michigan,1166031202.89,1.17B
+Retail Trade,Massachusetts,1157758684.24,1.16B
+Accommodation and Food Services,Oregon,1152643800.81,1.15B
+"Arts, Entertainment, and Recreation",California,1149593100.27,1.15B
+"Arts, Entertainment, and Recreation",New York,1148475166.35,1.15B
+Administrative and Support and Waste Management and Remediation Services,Ohio,1143905054.31,1.14B
+"Professional, Scientific, and Technical Services",Tennessee,1137088938.31,1.14B
+Administrative and Support and Waste Management and Remediation Services,Georgia,1136232358.1,1.14B
+Wholesale Trade,Michigan,1120338944.47,1.12B
+Manufacturing,Illinois,1101285816.42,1.1B
+Construction,Connecticut,1086241860.86,1.09B
+Construction,North Carolina,1085027129.17,1.09B
+Accommodation and Food Services,Maryland,1081448521.91,1.08B
+Information,New York,1080106512.48,1.08B
+"Agriculture, Forestry, Fishing and Hunting",Iowa,1078551401.45,1.08B
+"Professional, Scientific, and Technical Services",Louisiana,1077159119.49,1.08B
+"Professional, Scientific, and Technical Services",Indiana,1075535633.56,1.08B
+Manufacturing,Tennessee,1073027578.0,1.07B
+"Professional, Scientific, and Technical Services",Connecticut,1071446489.67,1.07B
+Accommodation and Food Services,Minnesota,1058592246.64,1.06B
+Finance and Insurance,California,1058336702.28,1.06B
+"Professional, Scientific, and Technical Services",North Carolina,1052539875.99,1.05B
+Construction,New Jersey,1047089230.63,1.05B
+"Professional, Scientific, and Technical Services",Oregon,1031878166.97,1.03B
+Manufacturing,Oregon,1014423282.77,1.01B
+Real Estate Rental and Leasing,Florida,1008962940.96,1.01B
+Transportation and Warehousing,Ohio,1003637949.53,1.0B
+Health Care and Social Assistance,Kansas,980296366.17,0.98B
+"Professional, Scientific, and Technical Services",Wisconsin,975959946.87,0.98B
+Health Care and Social Assistance,Oklahoma,966760467.42,0.97B
+Accommodation and Food Services,Wisconsin,964943336.28,0.96B
+Accommodation and Food Services,North Carolina,962672058.86,0.96B
+Construction,Nevada,956172300.78,0.96B
+Transportation and Warehousing,Georgia,952470431.59,0.95B
+Health Care and Social Assistance,Kentucky,950671566.13,0.95B
+Administrative and Support and Waste Management and Remediation Services,Massachusetts,949675915.13,0.95B
+Accommodation and Food Services,Louisiana,949381504.28,0.95B
+Construction,Oklahoma,947545547.33,0.95B
+Manufacturing,Virginia,947061139.1,0.95B
+Accommodation and Food Services,New Jersey,942625330.31,0.94B
+Accommodation and Food Services,Indiana,940303570.04,0.94B
+Transportation and Warehousing,Pennsylvania,935761203.6,0.94B
+Construction,Kentucky,931905611.33,0.93B
+Retail Trade,Tennessee,928585631.9,0.93B
+Retail Trade,Virginia,922532598.47,0.92B
+Retail Trade,Illinois,917428899.9,0.92B
+Manufacturing,Colorado,904826683.36,0.9B
+Transportation and Warehousing,Illinois,892744720.43,0.89B
+Finance and Insurance,New York,889056374.32,0.89B
+Retail Trade,Missouri,882811108.52,0.88B
+Manufacturing,Oklahoma,878730367.33,0.88B
+Manufacturing,Louisiana,870796210.29,0.87B
+Construction,Kansas,863257087.06,0.86B
+Retail Trade,Wisconsin,859545732.11,0.86B
+Wholesale Trade,Georgia,853501047.86,0.85B
+Accommodation and Food Services,Nevada,851431140.8,0.85B
+Health Care and Social Assistance,Alabama,845796344.76,0.85B
+Finance and Insurance,Texas,840839105.08,0.84B
+Wholesale Trade,Massachusetts,832425711.0,0.83B
+Construction,Alabama,821156906.53,0.82B
+Accommodation and Food Services,Connecticut,820316876.76,0.82B
+Retail Trade,Colorado,819168427.14,0.82B
+Manufacturing,Kansas,807905333.25,0.81B
+Retail Trade,Indiana,802439786.3,0.8B
+Retail Trade,Arizona,787626435.09,0.79B
+Transportation and Warehousing,Michigan,780321929.62,0.78B
+Manufacturing,Alabama,777437629.91,0.78B
+Retail Trade,Minnesota,775411676.74,0.78B
+"Professional, Scientific, and Technical Services",Oklahoma,770476351.89,0.77B
+Administrative and Support and Waste Management and Remediation Services,Virginia,762540189.63,0.76B
+Health Care and Social Assistance,Arkansas,762126541.84,0.76B
+Manufacturing,Kentucky,756893772.66,0.76B
+Manufacturing,Arizona,756378390.72,0.76B
+Retail Trade,North Carolina,756094771.42,0.76B
+"Agriculture, Forestry, Fishing and Hunting",Nebraska,751382428.16,0.75B
+Wholesale Trade,Missouri,744132260.52,0.74B
+Retail Trade,Maryland,739580532.13,0.74B
+"Professional, Scientific, and Technical Services",Alabama,738018919.64,0.74B
+Wholesale Trade,Washington,732211075.17,0.73B
+Manufacturing,New Jersey,718180277.33,0.72B
+Wholesale Trade,Wisconsin,714506124.13,0.71B
+Retail Trade,Oregon,709157780.0,0.71B
+Manufacturing,Maryland,699637751.04,0.7B
+Retail Trade,Louisiana,693631947.83,0.69B
+"Agriculture, Forestry, Fishing and Hunting",Illinois,691926523.34,0.69B
+Health Care and Social Assistance,Mississippi,690973529.35,0.69B
+Administrative and Support and Waste Management and Remediation Services,Illinois,690703077.77,0.69B
+Administrative and Support and Waste Management and Remediation Services,Maryland,690269313.37,0.69B
+Wholesale Trade,Illinois,689015243.37,0.69B
+Finance and Insurance,Florida,684063229.47,0.68B
+Accommodation and Food Services,Kentucky,680704682.17,0.68B
+Wholesale Trade,Minnesota,677778462.59,0.68B
+Educational Services,Pennsylvania,676393653.99,0.68B
+Real Estate Rental and Leasing,Pennsylvania,672862457.7,0.67B
+Health Care and Social Assistance,Nevada,665065558.93,0.67B
+Retail Trade,Connecticut,665015002.81,0.67B
+Administrative and Support and Waste Management and Remediation Services,North Carolina,658993751.86,0.66B
+"Professional, Scientific, and Technical Services",Kentucky,653150144.45,0.65B
+"Professional, Scientific, and Technical Services",Nevada,652382858.43,0.65B
+Retail Trade,New Jersey,648063698.9,0.65B
+"Agriculture, Forestry, Fishing and Hunting",Washington,643731053.23,0.64B
+Mining,Louisiana,632831612.5,0.63B
+Educational Services,Texas,629015090.45,0.63B
+"Agriculture, Forestry, Fishing and Hunting",Kansas,623089490.0,0.62B
+Wholesale Trade,Indiana,621617131.25,0.62B
+Accommodation and Food Services,Oklahoma,620118239.07,0.62B
+"Agriculture, Forestry, Fishing and Hunting",Texas,610209168.79,0.61B
+"Professional, Scientific, and Technical Services",Kansas,600797687.79,0.6B
+Construction,Mississippi,599562673.39,0.6B
+Information,Texas,594399357.6,0.59B
+Educational Services,Massachusetts,593626639.15,0.59B
+Administrative and Support and Waste Management and Remediation Services,Indiana,592678847.29,0.59B
+Administrative and Support and Waste Management and Remediation Services,Colorado,589807739.99,0.59B
+Administrative and Support and Waste Management and Remediation Services,Tennessee,588957358.58,0.59B
+Administrative and Support and Waste Management and Remediation Services,Washington,588076801.59,0.59B
+"Arts, Entertainment, and Recreation",Texas,580776582.68,0.58B
+Transportation and Warehousing,Massachusetts,579304876.08,0.58B
+Wholesale Trade,New Jersey,569685313.75,0.57B
+Retail Trade,Alabama,566582325.5,0.57B
+Accommodation and Food Services,Kansas,565640418.18,0.57B
+Administrative and Support and Waste Management and Remediation Services,Arizona,562108371.61,0.56B
+Real Estate Rental and Leasing,Ohio,560301249.13,0.56B
+Transportation and Warehousing,Indiana,555281412.23,0.56B
+Construction,Arkansas,554381249.46,0.55B
+Construction,Utah,551443070.84,0.55B
+Retail Trade,Oklahoma,549838435.76,0.55B
+"Arts, Entertainment, and Recreation",Florida,544332030.21,0.54B
+Transportation and Warehousing,Missouri,536910540.8,0.54B
+Administrative and Support and Waste Management and Remediation Services,Minnesota,535336584.75,0.54B
+Transportation and Warehousing,Louisiana,534533910.85,0.53B
+Real Estate Rental and Leasing,Georgia,533286511.0,0.53B
+Retail Trade,Kentucky,530720473.27,0.53B
+Mining,Oklahoma,526380858.04,0.53B
+Transportation and Warehousing,Washington,525177796.58,0.53B
+Wholesale Trade,Tennessee,523825221.4,0.52B
+Health Care and Social Assistance,Maine,519133285.51,0.52B
+"Agriculture, Forestry, Fishing and Hunting",South Dakota,516991819.99,0.52B
+Administrative and Support and Waste Management and Remediation Services,Missouri,511200915.5,0.51B
+Wholesale Trade,Colorado,494702580.08,0.49B
+Accommodation and Food Services,Maine,492389806.33,0.49B
+Real Estate Rental and Leasing,Massachusetts,486560715.2,0.49B
+Transportation and Warehousing,Minnesota,483015751.08,0.48B
+Real Estate Rental and Leasing,Michigan,476008238.55,0.48B
+Wholesale Trade,Maryland,475415938.98,0.48B
+Transportation and Warehousing,New Jersey,475199007.28,0.48B
+"Agriculture, Forestry, Fishing and Hunting",Minnesota,474536039.93,0.47B
+Wholesale Trade,Louisiana,471283170.37,0.47B
+Transportation and Warehousing,Wisconsin,469338299.26,0.47B
+Administrative and Support and Waste Management and Remediation Services,New Jersey,468636993.06,0.47B
+Transportation and Warehousing,Tennessee,468275506.66,0.47B
+Educational Services,Florida,466867381.8,0.47B
+Retail Trade,Mississippi,463121244.66,0.46B
+Wholesale Trade,North Carolina,457672118.43,0.46B
+Wholesale Trade,Virginia,455614272.09,0.46B
+Finance and Insurance,Pennsylvania,453360818.47,0.45B
+Real Estate Rental and Leasing,Colorado,452232621.89,0.45B
+Administrative and Support and Waste Management and Remediation Services,Louisiana,452011770.87,0.45B
+Construction,New Mexico,451593190.55,0.45B
+Retail Trade,Kansas,449443517.88,0.45B
+"Arts, Entertainment, and Recreation",Pennsylvania,446147675.41,0.45B
+Real Estate Rental and Leasing,Illinois,444485563.67,0.44B
+Accommodation and Food Services,Mississippi,438461945.6,0.44B
+Health Care and Social Assistance,New Mexico,437123742.38,0.44B
+"Agriculture, Forestry, Fishing and Hunting",Missouri,437005477.62,0.44B
+Administrative and Support and Waste Management and Remediation Services,Wisconsin,436685523.98,0.44B
+"Agriculture, Forestry, Fishing and Hunting",Wisconsin,436426023.51,0.44B
+Wholesale Trade,Oregon,436223125.27,0.44B
+Wholesale Trade,Arizona,431711950.18,0.43B
+Retail Trade,Nevada,426707285.14,0.43B
+Accommodation and Food Services,New Mexico,418428666.58,0.42B
+Transportation and Warehousing,Virginia,417974459.24,0.42B
+"Professional, Scientific, and Technical Services",Utah,417926640.65,0.42B
+Educational Services,Georgia,417111975.27,0.42B
+Educational Services,Ohio,412921514.7,0.41B
+Accommodation and Food Services,Arkansas,404747223.76,0.4B
+"Agriculture, Forestry, Fishing and Hunting",North Dakota,404229290.99,0.4B
+Educational Services,Virginia,401618896.45,0.4B
+Administrative and Support and Waste Management and Remediation Services,Connecticut,400053107.86,0.4B
+Accommodation and Food Services,Alabama,399264239.99,0.4B
+Finance and Insurance,Illinois,398738668.23,0.4B
+"Agriculture, Forestry, Fishing and Hunting",Oregon,397566898.92,0.4B
+Manufacturing,Mississippi,396073796.97,0.4B
+Real Estate Rental and Leasing,Washington,394863912.7,0.39B
+Accommodation and Food Services,South Carolina,388779268.5,0.39B
+Information,Pennsylvania,387694386.28,0.39B
+Wholesale Trade,Connecticut,385648082.84,0.39B
+Real Estate Rental and Leasing,Virginia,383456920.06,0.38B
+Construction,Montana,380940449.76,0.38B
+Manufacturing,Arkansas,379041367.58,0.38B
+Information,Virginia,377964567.57,0.38B
+Finance and Insurance,Ohio,376750965.24,0.38B
+"Agriculture, Forestry, Fishing and Hunting",Oklahoma,369916332.85,0.37B
+"Arts, Entertainment, and Recreation",Massachusetts,369770334.21,0.37B
+Health Care and Social Assistance,West Virginia,369387735.39,0.37B
+Administrative and Support and Waste Management and Remediation Services,Nevada,365410989.99,0.37B
+"Agriculture, Forestry, Fishing and Hunting",Michigan,361325612.62,0.36B
+Accommodation and Food Services,Montana,361096162.51,0.36B
+"Professional, Scientific, and Technical Services",Mississippi,359095706.62,0.36B
+Health Care and Social Assistance,South Carolina,358189358.08,0.36B
+Transportation and Warehousing,Maryland,357531201.83,0.36B
+Transportation and Warehousing,North Carolina,356199472.4,0.36B
+Information,Massachusetts,354384017.73,0.35B
+"Professional, Scientific, and Technical Services",South Carolina,353255945.35,0.35B
+Retail Trade,Arkansas,353129561.78,0.35B
+"Agriculture, Forestry, Fishing and Hunting",Ohio,345656769.45,0.35B
+Real Estate Rental and Leasing,Tennessee,345020624.27,0.35B
+"Arts, Entertainment, and Recreation",Ohio,343133731.33,0.34B
+Administrative and Support and Waste Management and Remediation Services,Oregon,342484224.94,0.34B
+Finance and Insurance,Michigan,341061677.9,0.34B
+Construction,Maine,338993144.33,0.34B
+Wholesale Trade,Kentucky,338457716.41,0.34B
+Administrative and Support and Waste Management and Remediation Services,Alabama,338333903.02,0.34B
+Accommodation and Food Services,Utah,338270793.34,0.34B
+Real Estate Rental and Leasing,Maryland,335883614.05,0.34B
+Real Estate Rental and Leasing,Arizona,335429128.17,0.34B
+Information,Georgia,332494979.01,0.33B
+Manufacturing,Utah,332019165.16,0.33B
+"Arts, Entertainment, and Recreation",Washington,327981790.21,0.33B
+Manufacturing,Nevada,327715506.82,0.33B
+Educational Services,Michigan,327573199.11,0.33B
+"Arts, Entertainment, and Recreation",Tennessee,327271069.84,0.33B
+Administrative and Support and Waste Management and Remediation Services,Oklahoma,326393443.19,0.33B
+Wholesale Trade,Kansas,326052808.83,0.33B
+Educational Services,Maryland,325187142.42,0.33B
+Finance and Insurance,Massachusetts,324401858.89,0.32B
+"Arts, Entertainment, and Recreation",Illinois,324189229.2,0.32B
+"Arts, Entertainment, and Recreation",Michigan,324050189.97,0.32B
+Transportation and Warehousing,Arizona,322570217.59,0.32B
+Transportation and Warehousing,Colorado,322148270.73,0.32B
+Finance and Insurance,Georgia,320507230.81,0.32B
+"Arts, Entertainment, and Recreation",Georgia,320386116.29,0.32B
+Health Care and Social Assistance,Montana,320043765.66,0.32B
+Real Estate Rental and Leasing,Missouri,318988407.07,0.32B
+Wholesale Trade,Alabama,318403176.8,0.32B
+Construction,South Carolina,317595802.48,0.32B
+Information,Florida,316922209.34,0.32B
+"Professional, Scientific, and Technical Services",Arkansas,316775705.21,0.32B
+Wholesale Trade,Oklahoma,316456694.3,0.32B
+Health Care and Social Assistance,Utah,309964546.31,0.31B
+Transportation and Warehousing,Oregon,309775822.6,0.31B
+Real Estate Rental and Leasing,Minnesota,306497483.99,0.31B
+Real Estate Rental and Leasing,Indiana,305017382.6,0.31B
+Real Estate Rental and Leasing,New Jersey,301169439.18,0.3B
+"Agriculture, Forestry, Fishing and Hunting",Florida,301067103.26,0.3B
+Retail Trade,Maine,300038262.72,0.3B
+Mining,New Mexico,299897036.69,0.3B
+Transportation and Warehousing,Kentucky,299596955.73,0.3B
+"Agriculture, Forestry, Fishing and Hunting",Kentucky,291167084.58,0.29B
+Educational Services,Louisiana,289594835.33,0.29B
+Information,Ohio,288614834.75,0.29B
+Transportation and Warehousing,Mississippi,286494107.55,0.29B
+Educational Services,Colorado,286118687.73,0.29B
+Administrative and Support and Waste Management and Remediation Services,Kentucky,284692016.55,0.28B
+Manufacturing,Maine,284546386.65,0.28B
+Retail Trade,South Carolina,284429558.88,0.28B
+Transportation and Warehousing,Oklahoma,284274135.8,0.28B
+Administrative and Support and Waste Management and Remediation Services,Kansas,283904276.07,0.28B
+"Agriculture, Forestry, Fishing and Hunting",Indiana,283080756.44,0.28B
+Real Estate Rental and Leasing,North Carolina,281812590.92,0.28B
+Educational Services,North Carolina,280201255.13,0.28B
+"Agriculture, Forestry, Fishing and Hunting",Georgia,279805475.82,0.28B
+Construction,West Virginia,279165821.05,0.28B
+"Professional, Scientific, and Technical Services",Maine,279073737.56,0.28B
+Information,Michigan,278305128.79,0.28B
+Retail Trade,Utah,274071132.87,0.27B
+Mining,Colorado,273929745.71,0.27B
+"Professional, Scientific, and Technical Services",New Mexico,271206590.85,0.27B
+Finance and Insurance,Missouri,263204875.24,0.26B
+Retail Trade,New Mexico,261757874.33,0.26B
+"Arts, Entertainment, and Recreation",Colorado,259966080.87,0.26B
+Transportation and Warehousing,Alabama,258879822.72,0.26B
+Educational Services,Tennessee,256984645.07,0.26B
+Educational Services,Washington,255185547.83,0.26B
+Real Estate Rental and Leasing,Wisconsin,255061265.51,0.26B
+Real Estate Rental and Leasing,Louisiana,250631039.52,0.25B
+Transportation and Warehousing,Kansas,250083712.38,0.25B
+Construction,Iowa,249728845.79,0.25B
+Educational Services,Missouri,244798292.9,0.24B
+Construction,Wyoming,241673966.0,0.24B
+Finance and Insurance,Tennessee,241140606.85,0.24B
+Finance and Insurance,Colorado,240184297.51,0.24B
+Educational Services,Arizona,236786355.18,0.24B
+Information,Washington,235591648.2,0.24B
+Finance and Insurance,Arizona,235404255.51,0.24B
+Health Care and Social Assistance,Vermont,234496806.89,0.23B
+"Agriculture, Forestry, Fishing and Hunting",New York,233001128.47,0.23B
+Educational Services,Indiana,232735115.67,0.23B
+Information,Colorado,232185154.4,0.23B
+Construction,Nebraska,231508729.63,0.23B
+Manufacturing,Vermont,231313594.94,0.23B
+Transportation and Warehousing,Nevada,229198158.25,0.23B
+Administrative and Support and Waste Management and Remediation Services,Mississippi,228934265.65,0.23B
+"Agriculture, Forestry, Fishing and Hunting",Pennsylvania,228615082.43,0.23B
+Educational Services,Illinois,227408592.83,0.23B
+"Arts, Entertainment, and Recreation",Virginia,227340553.75,0.23B
+Educational Services,Minnesota,226609494.45,0.23B
+Finance and Insurance,Virginia,226233657.3,0.23B
+Construction,South Dakota,225324105.99,0.23B
+"Professional, Scientific, and Technical Services",Montana,225173552.44,0.23B
+Wholesale Trade,Nevada,223338594.91,0.22B
+Real Estate Rental and Leasing,Oregon,222773700.59,0.22B
+Educational Services,Connecticut,220298034.34,0.22B
+"Arts, Entertainment, and Recreation",Arizona,217676430.67,0.22B
+Finance and Insurance,Connecticut,215568372.36,0.22B
+"Arts, Entertainment, and Recreation",Nevada,214336959.31,0.21B
+Educational Services,Wisconsin,210742034.82,0.21B
+"Agriculture, Forestry, Fishing and Hunting",Mississippi,209761991.25,0.21B
+Transportation and Warehousing,Connecticut,209426299.23,0.21B
+Wholesale Trade,Mississippi,209236992.11,0.21B
+Health Care and Social Assistance,Alaska,207739518.64,0.21B
+"Agriculture, Forestry, Fishing and Hunting",Colorado,207233246.75,0.21B
+Accommodation and Food Services,Vermont,205520498.05,0.21B
+"Arts, Entertainment, and Recreation",Wisconsin,205471366.69,0.21B
+Construction,Vermont,205284303.46,0.21B
+Finance and Insurance,Washington,202887838.87,0.2B
+Retail Trade,Montana,201841878.84,0.2B
+Finance and Insurance,New Jersey,200676973.6,0.2B
+Real Estate Rental and Leasing,Connecticut,200557289.94,0.2B
+Information,Missouri,199447082.61,0.2B
+Information,Minnesota,197962320.14,0.2B
+"Professional, Scientific, and Technical Services",West Virginia,197924218.36,0.2B
+Health Care and Social Assistance,Wyoming,196955316.27,0.2B
+Accommodation and Food Services,Wyoming,195973387.95,0.2B
+"Arts, Entertainment, and Recreation",New Jersey,195221057.56,0.2B
+"Arts, Entertainment, and Recreation",Oregon,193510893.04,0.19B
+"Agriculture, Forestry, Fishing and Hunting",Arkansas,192071087.52,0.19B
+Wholesale Trade,Arkansas,191273875.25,0.19B
+Health Care and Social Assistance,Nebraska,191120234.98,0.19B
+Finance and Insurance,Indiana,190540720.62,0.19B
+Educational Services,New Jersey,189253996.62,0.19B
+Real Estate Rental and Leasing,Nevada,188427213.36,0.19B
+Construction,Alaska,187696171.44,0.19B
+Finance and Insurance,Minnesota,187396303.98,0.19B
+Finance and Insurance,Wisconsin,186964872.05,0.19B
+Retail Trade,West Virginia,184770646.13,0.18B
+Manufacturing,West Virginia,184456294.64,0.18B
+Manufacturing,New Mexico,184051234.99,0.18B
+Real Estate Rental and Leasing,Oklahoma,183683788.04,0.18B
+Administrative and Support and Waste Management and Remediation Services,South Carolina,183412268.36,0.18B
+"Arts, Entertainment, and Recreation",Indiana,182962223.46,0.18B
+"Professional, Scientific, and Technical Services",Vermont,182592070.89,0.18B
+"Arts, Entertainment, and Recreation",Connecticut,181359783.21,0.18B
+"Arts, Entertainment, and Recreation",Missouri,180584373.44,0.18B
+Transportation and Warehousing,Arkansas,179828242.77,0.18B
+Retail Trade,Vermont,179387259.93,0.18B
+Mining,Pennsylvania,176753819.12,0.18B
+Educational Services,Oregon,174336759.26,0.17B
+Mining,Wyoming,173990986.78,0.17B
+Information,Maryland,173883642.06,0.17B
+Information,Illinois,173257475.01,0.17B
+Real Estate Rental and Leasing,Kansas,172925485.39,0.17B
+"Arts, Entertainment, and Recreation",North Carolina,171649202.43,0.17B
+Real Estate Rental and Leasing,Alabama,171426992.77,0.17B
+"Agriculture, Forestry, Fishing and Hunting",Montana,170839321.14,0.17B
+Information,Arizona,168654462.21,0.17B
+Finance and Insurance,Maryland,167802062.73,0.17B
+"Arts, Entertainment, and Recreation",Maryland,166735313.66,0.17B
+Construction,Idaho,163785772.18,0.16B
+Accommodation and Food Services,South Dakota,163329918.52,0.16B
+Real Estate Rental and Leasing,Kentucky,161751304.34,0.16B
+"Agriculture, Forestry, Fishing and Hunting",Tennessee,161735648.45,0.16B
+Finance and Insurance,Louisiana,160201082.41,0.16B
+Information,Tennessee,159930439.72,0.16B
+Information,Oregon,156910492.4,0.16B
+Accommodation and Food Services,Alaska,155172221.48,0.16B
+Accommodation and Food Services,Nebraska,153582467.17,0.15B
+"Agriculture, Forestry, Fishing and Hunting",Louisiana,153503349.65,0.15B
+"Arts, Entertainment, and Recreation",Minnesota,153179561.24,0.15B
+"Agriculture, Forestry, Fishing and Hunting",Arizona,152356302.26,0.15B
+Accommodation and Food Services,Hawaii,151517387.24,0.15B
+"Professional, Scientific, and Technical Services",Wyoming,151363654.37,0.15B
+Health Care and Social Assistance,Hawaii,150770230.95,0.15B
+Construction,New Hampshire,149614910.23,0.15B
+Accommodation and Food Services,Iowa,149520515.15,0.15B
+Transportation and Warehousing,South Carolina,149147922.84,0.15B
+Finance and Insurance,Oklahoma,148303627.08,0.15B
+Management of Companies and Enterprises,Texas,146443317.93,0.15B
+Manufacturing,South Carolina,145799716.9,0.15B
+Accommodation and Food Services,New Hampshire,143739266.65,0.14B
+"Agriculture, Forestry, Fishing and Hunting",Virginia,143696511.24,0.14B
+Finance and Insurance,Oregon,143402350.19,0.14B
+Accommodation and Food Services,West Virginia,143384470.99,0.14B
+Information,Wisconsin,142613167.07,0.14B
+Utilities,Texas,142609749.78,0.14B
+Wholesale Trade,Utah,142379214.26,0.14B
+Health Care and Social Assistance,South Dakota,139195309.92,0.14B
+"Agriculture, Forestry, Fishing and Hunting",Alabama,139028882.72,0.14B
+Health Care and Social Assistance,Idaho,138894026.28,0.14B
+Educational Services,Kentucky,138110981.55,0.14B
+"Professional, Scientific, and Technical Services",New Hampshire,135800396.51,0.14B
+Information,Indiana,135644328.57,0.14B
+Administrative and Support and Waste Management and Remediation Services,Arkansas,133939118.56,0.13B
+Manufacturing,Montana,133366629.86,0.13B
+"Agriculture, Forestry, Fishing and Hunting",North Carolina,133276170.8,0.13B
+Health Care and Social Assistance,Iowa,132981451.06,0.13B
+Administrative and Support and Waste Management and Remediation Services,Utah,132373930.09,0.13B
+Real Estate Rental and Leasing,South Carolina,131719528.94,0.13B
+"Professional, Scientific, and Technical Services",Nebraska,131584507.92,0.13B
+Finance and Insurance,North Carolina,130542152.83,0.13B
+Information,Connecticut,129257931.28,0.13B
+Information,New Jersey,129190541.86,0.13B
+Retail Trade,South Dakota,128754365.25,0.13B
+Retail Trade,Iowa,127208549.19,0.13B
+Retail Trade,Nebraska,126802184.67,0.13B
+Finance and Insurance,Kansas,126660936.64,0.13B
+"Arts, Entertainment, and Recreation",Oklahoma,125627001.93,0.13B
+Mining,California,125575697.62,0.13B
+"Professional, Scientific, and Technical Services",Iowa,124800801.84,0.12B
+Accommodation and Food Services,Rhode Island,124273114.88,0.12B
+Health Care and Social Assistance,New Hampshire,122611478.04,0.12B
+Construction,Hawaii,122474212.05,0.12B
+Accommodation and Food Services,Idaho,119544467.96,0.12B
+Transportation and Warehousing,Iowa,117570785.34,0.12B
+"Arts, Entertainment, and Recreation",Louisiana,117522433.89,0.12B
+Educational Services,Nevada,117177558.11,0.12B
+Mining,Kansas,116728458.98,0.12B
+Educational Services,Kansas,116033389.27,0.12B
+Administrative and Support and Waste Management and Remediation Services,New Mexico,114206402.14,0.11B
+Construction,North Dakota,113842577.91,0.11B
+Information,North Carolina,113612828.87,0.11B
+Finance and Insurance,Nevada,113522696.48,0.11B
+Finance and Insurance,Kentucky,112724127.36,0.11B
+"Agriculture, Forestry, Fishing and Hunting",Maine,112699599.11,0.11B
+Administrative and Support and Waste Management and Remediation Services,Maine,111719501.93,0.11B
+Retail Trade,Wyoming,111332347.06,0.11B
+"Professional, Scientific, and Technical Services",Hawaii,110881885.63,0.11B
+Finance and Insurance,Alabama,110195222.2,0.11B
+Health Care and Social Assistance,Rhode Island,108540705.34,0.11B
+Management of Companies and Enterprises,New York,107627590.65,0.11B
+Real Estate Rental and Leasing,Mississippi,104211656.22,0.1B
+"Professional, Scientific, and Technical Services",Rhode Island,103253619.65,0.1B
+"Arts, Entertainment, and Recreation",Kentucky,103015498.88,0.1B
+"Professional, Scientific, and Technical Services",Alaska,101521885.81,0.1B
+"Professional, Scientific, and Technical Services",South Dakota,101021986.87,0.1B
+Construction,Rhode Island,99591527.53,0.1B
+Transportation and Warehousing,Maine,99029162.35,0.1B
+Transportation and Warehousing,Nebraska,98935094.33,0.1B
+Wholesale Trade,Maine,97292558.83,0.1B
+Wholesale Trade,South Carolina,96699641.39,0.1B
+Information,Nevada,96092287.62,0.1B
+Educational Services,Alabama,96068888.5,0.1B
+Transportation and Warehousing,Utah,95745128.09,0.1B
+Wholesale Trade,Montana,95292200.04,0.1B
+Utilities,California,95149634.27,0.1B
+Retail Trade,Hawaii,95105042.86,0.1B
+Retail Trade,New Hampshire,94588313.88,0.09B
+Educational Services,Oklahoma,92536446.15,0.09B
+Real Estate Rental and Leasing,Arkansas,91583895.51,0.09B
+"Arts, Entertainment, and Recreation",New Mexico,90971135.42,0.09B
+"Professional, Scientific, and Technical Services",Idaho,90051698.62,0.09B
+Transportation and Warehousing,Montana,89687615.87,0.09B
+"Agriculture, Forestry, Fishing and Hunting",Massachusetts,89643453.18,0.09B
+Real Estate Rental and Leasing,New Mexico,89441325.94,0.09B
+Transportation and Warehousing,Alaska,88826599.31,0.09B
+Mining,Kentucky,88443284.53,0.09B
+Finance and Insurance,Mississippi,88343061.05,0.09B
+Mining,Indiana,87834569.67,0.09B
+"Arts, Entertainment, and Recreation",Kansas,87663840.3,0.09B
+Information,Louisiana,87604129.77,0.09B
+Mining,Ohio,87547960.75,0.09B
+Management of Companies and Enterprises,Georgia,87127821.96,0.09B
+Finance and Insurance,South Carolina,85871601.94,0.09B
+"Agriculture, Forestry, Fishing and Hunting",New Mexico,85397235.95,0.09B
+Information,Utah,83962120.77,0.08B
+Administrative and Support and Waste Management and Remediation Services,Montana,83198875.69,0.08B
+Real Estate Rental and Leasing,Maine,81649230.62,0.08B
+Transportation and Warehousing,New Mexico,81573911.31,0.08B
+Information,Kentucky,80558577.43,0.08B
+Educational Services,Mississippi,80274835.3,0.08B
+Manufacturing,South Dakota,80032379.16,0.08B
+Wholesale Trade,West Virginia,79762240.69,0.08B
+Information,Alabama,78962894.5,0.08B
+Accommodation and Food Services,North Dakota,78836337.72,0.08B
+Manufacturing,Wyoming,78438978.21,0.08B
+Mining,West Virginia,78351147.96,0.08B
+Transportation and Warehousing,West Virginia,77743010.94,0.08B
+Information,Kansas,77581701.11,0.08B
+"Agriculture, Forestry, Fishing and Hunting",Idaho,76918012.85,0.08B
+"Arts, Entertainment, and Recreation",South Carolina,75895336.89,0.08B
+Retail Trade,Idaho,74997474.2,0.07B
+Management of Companies and Enterprises,California,74199632.55,0.07B
+Information,Oklahoma,73829618.06,0.07B
+Transportation and Warehousing,Wyoming,73064756.5,0.07B
+"Arts, Entertainment, and Recreation",Alabama,72131810.37,0.07B
+Health Care and Social Assistance,North Dakota,71759010.96,0.07B
+Retail Trade,Alaska,71631390.36,0.07B
+Management of Companies and Enterprises,Florida,70722212.14,0.07B
+Educational Services,Arkansas,70028648.16,0.07B
+Transportation and Warehousing,South Dakota,69477886.0,0.07B
+Educational Services,Vermont,69025283.48,0.07B
+Manufacturing,New Hampshire,67990096.5,0.07B
+Real Estate Rental and Leasing,Hawaii,67660461.51,0.07B
+Retail Trade,Rhode Island,67095890.65,0.07B
+Real Estate Rental and Leasing,Utah,66593527.76,0.07B
+Educational Services,Maine,66460637.67,0.07B
+Management of Companies and Enterprises,Pennsylvania,65808194.45,0.07B
+Administrative and Support and Waste Management and Remediation Services,Nebraska,65665685.88,0.07B
+Finance and Insurance,Iowa,65655477.18,0.07B
+Administrative and Support and Waste Management and Remediation Services,Iowa,65208108.89,0.07B
+Wholesale Trade,Vermont,64765478.93,0.06B
+Real Estate Rental and Leasing,Iowa,64583427.04,0.06B
+Retail Trade,North Dakota,64094103.1,0.06B
+"Arts, Entertainment, and Recreation",Maine,63703002.65,0.06B
+Wholesale Trade,New Mexico,63643284.57,0.06B
+"Agriculture, Forestry, Fishing and Hunting",Wyoming,63626326.93,0.06B
+"Arts, Entertainment, and Recreation",Montana,63529108.84,0.06B
+Real Estate Rental and Leasing,Montana,63226330.16,0.06B
+Manufacturing,Idaho,61533821.24,0.06B
+"Agriculture, Forestry, Fishing and Hunting",New Jersey,61492185.33,0.06B
+Administrative and Support and Waste Management and Remediation Services,West Virginia,61414407.44,0.06B
+"Arts, Entertainment, and Recreation",Mississippi,61320724.4,0.06B
+Manufacturing,Rhode Island,60711800.33,0.06B
+Finance and Insurance,Utah,59615120.83,0.06B
+"Professional, Scientific, and Technical Services",North Dakota,59500926.68,0.06B
+Utilities,New York,59178296.12,0.06B
+Manufacturing,Nebraska,59137566.18,0.06B
+Mining,New York,58142455.03,0.06B
+Educational Services,New Mexico,58058740.01,0.06B
+Finance and Insurance,Nebraska,58002339.8,0.06B
+Mining,Michigan,57882507.25,0.06B
+"Agriculture, Forestry, Fishing and Hunting",South Carolina,56754202.48,0.06B
+Administrative and Support and Waste Management and Remediation Services,Alaska,56671431.2,0.06B
+Manufacturing,Iowa,56349014.4,0.06B
+Utilities,Oklahoma,55943754.56,0.06B
+Transportation and Warehousing,North Dakota,55796377.77,0.06B
+"Arts, Entertainment, and Recreation",Utah,55604672.82,0.06B
+Administrative and Support and Waste Management and Remediation Services,New Hampshire,55433912.82,0.06B
+Management of Companies and Enterprises,Michigan,55417605.33,0.06B
+Mining,Tennessee,53189764.42,0.05B
+Wholesale Trade,South Dakota,53160080.36,0.05B
+Finance and Insurance,Arkansas,52804661.92,0.05B
+Wholesale Trade,Nebraska,52632119.77,0.05B
+Utilities,Florida,52559753.05,0.05B
+Real Estate Rental and Leasing,Nebraska,52434886.08,0.05B
+Educational Services,Utah,52417045.74,0.05B
+Mining,Mississippi,52247623.54,0.05B
+Health Care and Social Assistance,Delaware,50272465.18,0.05B
+Utilities,Virginia,50050934.14,0.05B
+"Arts, Entertainment, and Recreation",Vermont,48976108.12,0.05B
+"Agriculture, Forestry, Fishing and Hunting",Connecticut,48573876.23,0.05B
+Administrative and Support and Waste Management and Remediation Services,Hawaii,47487710.18,0.05B
+"Agriculture, Forestry, Fishing and Hunting",Maryland,47393800.46,0.05B
+"Professional, Scientific, and Technical Services",Delaware,47248659.2,0.05B
+Information,Arkansas,46628064.53,0.05B
+Wholesale Trade,Iowa,46283001.7,0.05B
+Information,Maine,45901716.91,0.05B
+Mining,Washington,45661963.31,0.05B
+Administrative and Support and Waste Management and Remediation Services,Rhode Island,44944787.57,0.04B
+Utilities,Maryland,44911370.78,0.04B
+Mining,Arizona,44586128.29,0.04B
+Educational Services,South Carolina,44222512.86,0.04B
+Finance and Insurance,Maine,44038392.03,0.04B
+Utilities,Colorado,43548934.85,0.04B
+Mining,Montana,43353064.49,0.04B
+Administrative and Support and Waste Management and Remediation Services,Vermont,43014646.61,0.04B
+Administrative and Support and Waste Management and Remediation Services,Idaho,42887952.91,0.04B
+Accommodation and Food Services,Delaware,42851603.02,0.04B
+Utilities,Ohio,42691664.62,0.04B
+Finance and Insurance,Montana,42652057.76,0.04B
+Finance and Insurance,South Dakota,42413384.04,0.04B
+Manufacturing,Hawaii,42319463.26,0.04B
+Information,Mississippi,41278339.1,0.04B
+Administrative and Support and Waste Management and Remediation Services,South Dakota,41145037.21,0.04B
+Real Estate Rental and Leasing,New Hampshire,41144956.39,0.04B
+Utilities,Mississippi,41082531.28,0.04B
+Utilities,Pennsylvania,41010550.03,0.04B
+Management of Companies and Enterprises,Ohio,40662352.03,0.04B
+Utilities,Michigan,40598213.5,0.04B
+Construction,Delaware,40584085.69,0.04B
+Utilities,Georgia,40584031.09,0.04B
+Real Estate Rental and Leasing,Vermont,40173540.32,0.04B
+Utilities,Massachusetts,40060491.26,0.04B
+Mining,Virginia,39991316.85,0.04B
+Wholesale Trade,Hawaii,39889679.79,0.04B
+Manufacturing,Alaska,39588933.21,0.04B
+"Arts, Entertainment, and Recreation",New Hampshire,39394662.91,0.04B
+Mining,North Carolina,39262242.74,0.04B
+Transportation and Warehousing,Vermont,38920873.8,0.04B
+Management of Companies and Enterprises,Indiana,38858627.32,0.04B
+"Arts, Entertainment, and Recreation",Arkansas,38661624.94,0.04B
+Mining,Alabama,38282782.8,0.04B
+Administrative and Support and Waste Management and Remediation Services,Wyoming,38102759.26,0.04B
+Finance and Insurance,New Mexico,37958952.82,0.04B
+"Agriculture, Forestry, Fishing and Hunting",Vermont,37698755.59,0.04B
+Wholesale Trade,New Hampshire,37653546.79,0.04B
+"Agriculture, Forestry, Fishing and Hunting",Nevada,37601214.88,0.04B
+Information,New Mexico,36743095.86,0.04B
+Utilities,Kansas,36591680.74,0.04B
+Real Estate Rental and Leasing,West Virginia,36379212.64,0.04B
+"Arts, Entertainment, and Recreation",Iowa,35913105.64,0.04B
+Real Estate Rental and Leasing,South Dakota,35768439.86,0.04B
+Retail Trade,Delaware,35458122.27,0.04B
+Real Estate Rental and Leasing,Wyoming,35253698.34,0.04B
+Utilities,Kentucky,35241675.9,0.04B
+Mining,Illinois,34862984.52,0.03B
+Real Estate Rental and Leasing,Rhode Island,34761041.31,0.03B
+Transportation and Warehousing,Idaho,34233320.63,0.03B
+Wholesale Trade,Rhode Island,34006292.65,0.03B
+Mining,Utah,33947371.16,0.03B
+Educational Services,West Virginia,33795442.52,0.03B
+Mining,Georgia,33528075.22,0.03B
+Management of Companies and Enterprises,Tennessee,33468112.69,0.03B
+Management of Companies and Enterprises,Arizona,33262120.97,0.03B
+Utilities,Missouri,32422294.69,0.03B
+Mining,Minnesota,32384619.91,0.03B
+Management of Companies and Enterprises,Minnesota,32375131.63,0.03B
+Mining,Wisconsin,32370534.43,0.03B
+"Arts, Entertainment, and Recreation",Nebraska,31868230.55,0.03B
+Utilities,Louisiana,31731464.82,0.03B
+Educational Services,Montana,31678505.7,0.03B
+Wholesale Trade,Alaska,31482999.77,0.03B
+Mining,Arkansas,31422278.21,0.03B
+Utilities,Alabama,31348113.9,0.03B
+Mining,Massachusetts,31042138.46,0.03B
+"Arts, Entertainment, and Recreation",West Virginia,30999082.93,0.03B
+Real Estate Rental and Leasing,Alaska,30930666.93,0.03B
+Information,West Virginia,30145520.85,0.03B
+Transportation and Warehousing,New Hampshire,29065674.95,0.03B
+"Arts, Entertainment, and Recreation",South Dakota,28648827.0,0.03B
+Wholesale Trade,Wyoming,28458882.9,0.03B
+"Arts, Entertainment, and Recreation",Wyoming,28253957.51,0.03B
+Administrative and Support and Waste Management and Remediation Services,North Dakota,28045367.33,0.03B
+Mining,Missouri,27941287.05,0.03B
+Management of Companies and Enterprises,Colorado,27807121.49,0.03B
+Mining,North Dakota,27363195.43,0.03B
+Management of Companies and Enterprises,Massachusetts,27316427.83,0.03B
+Real Estate Rental and Leasing,Idaho,27196521.57,0.03B
+Wholesale Trade,North Dakota,26738677.47,0.03B
+"Agriculture, Forestry, Fishing and Hunting",West Virginia,26659340.09,0.03B
+Utilities,Arkansas,26513056.83,0.03B
+Information,South Carolina,26503904.51,0.03B
+Utilities,Tennessee,26111265.9,0.03B
+Manufacturing,North Dakota,26045654.22,0.03B
+Transportation and Warehousing,Rhode Island,25878221.74,0.03B
+Information,Montana,25671736.84,0.03B
+Wholesale Trade,Idaho,25635357.21,0.03B
+"Arts, Entertainment, and Recreation",Rhode Island,25455347.63,0.03B
+Utilities,Minnesota,25075337.72,0.03B
+Mining,Oregon,25069208.02,0.03B
+Finance and Insurance,Wyoming,24871830.81,0.02B
+Real Estate Rental and Leasing,North Dakota,24793940.24,0.02B
+Mining,Alaska,24724264.73,0.02B
+"Arts, Entertainment, and Recreation",Alaska,24409078.29,0.02B
+Transportation and Warehousing,Hawaii,24406103.56,0.02B
+Mining,Florida,24313611.64,0.02B
+"Agriculture, Forestry, Fishing and Hunting",Utah,24277670.52,0.02B
+Finance and Insurance,New Hampshire,24076576.11,0.02B
+Finance and Insurance,Vermont,24002835.97,0.02B
+Management of Companies and Enterprises,Alaska,23874580.2,0.02B
+Information,Wyoming,23504868.52,0.02B
+Finance and Insurance,North Dakota,23414511.48,0.02B
+Management of Companies and Enterprises,Virginia,23073664.54,0.02B
+Management of Companies and Enterprises,Oklahoma,23038534.19,0.02B
+Finance and Insurance,West Virginia,22909074.49,0.02B
+"Arts, Entertainment, and Recreation",Hawaii,22751499.0,0.02B
+Management of Companies and Enterprises,Kansas,22522327.57,0.02B
+Information,Vermont,22417129.07,0.02B
+Utilities,North Carolina,22234188.64,0.02B
+"Arts, Entertainment, and Recreation",Idaho,22188761.5,0.02B
+Information,Alaska,22159845.28,0.02B
+Finance and Insurance,Hawaii,21583336.86,0.02B
+Management of Companies and Enterprises,Mississippi,21443794.76,0.02B
+Utilities,Indiana,21420217.06,0.02B
+Transportation and Warehousing,Delaware,21297272.87,0.02B
+Management of Companies and Enterprises,Louisiana,21191279.98,0.02B
+Educational Services,New Hampshire,21075745.76,0.02B
+Finance and Insurance,Rhode Island,21014181.46,0.02B
+Utilities,Arizona,20961103.47,0.02B
+Administrative and Support and Waste Management and Remediation Services,Delaware,20878502.15,0.02B
+Management of Companies and Enterprises,Connecticut,20478709.93,0.02B
+Utilities,Oregon,20161600.86,0.02B
+Management of Companies and Enterprises,Utah,19869473.49,0.02B
+Finance and Insurance,Idaho,19704652.78,0.02B
+Management of Companies and Enterprises,Alabama,19700080.18,0.02B
+Management of Companies and Enterprises,Missouri,19443050.88,0.02B
+"Agriculture, Forestry, Fishing and Hunting",Hawaii,19382657.33,0.02B
+Utilities,New Mexico,19352079.33,0.02B
+Management of Companies and Enterprises,Washington,18481353.03,0.02B
+Utilities,Washington,18067922.77,0.02B
+Utilities,Illinois,17953209.39,0.02B
+Management of Companies and Enterprises,Nevada,17765072.05,0.02B
+Educational Services,Wyoming,17718832.89,0.02B
+Management of Companies and Enterprises,Illinois,17688576.03,0.02B
+"Agriculture, Forestry, Fishing and Hunting",Alaska,16794370.91,0.02B
+Educational Services,Hawaii,16639222.98,0.02B
+Real Estate Rental and Leasing,Delaware,16579707.01,0.02B
+Mining,Nevada,16316963.02,0.02B
+Utilities,New Jersey,15777072.88,0.02B
+Management of Companies and Enterprises,Kentucky,15741168.61,0.02B
+Manufacturing,Delaware,15419358.8,0.02B
+Management of Companies and Enterprises,New Jersey,15348873.14,0.02B
+Mining,Maryland,15304193.9,0.02B
+Educational Services,Nebraska,15192764.83,0.02B
+Information,New Hampshire,15106365.73,0.02B
+Mining,Connecticut,14676100.43,0.01B
+Information,South Dakota,14210465.61,0.01B
+Utilities,Connecticut,14191887.97,0.01B
+Educational Services,Iowa,14122540.53,0.01B
+Management of Companies and Enterprises,Oregon,13900887.5,0.01B
+"Agriculture, Forestry, Fishing and Hunting",New Hampshire,13765855.33,0.01B
+"Arts, Entertainment, and Recreation",North Dakota,13558880.06,0.01B
+Management of Companies and Enterprises,Maryland,12923303.37,0.01B
+Educational Services,Alaska,12640868.54,0.01B
+Management of Companies and Enterprises,North Carolina,12532713.92,0.01B
+Information,Nebraska,12498197.09,0.01B
+Information,Idaho,11996515.1,0.01B
+Information,Iowa,11703685.23,0.01B
+Educational Services,Rhode Island,11572640.72,0.01B
+Educational Services,Idaho,11396824.14,0.01B
+Wholesale Trade,Delaware,10951092.56,0.01B
+"Agriculture, Forestry, Fishing and Hunting",Rhode Island,10812290.38,0.01B
+Management of Companies and Enterprises,Wisconsin,10575724.29,0.01B
+Utilities,Wisconsin,10473215.26,0.01B
+Utilities,Vermont,10449121.94,0.01B
+Information,Hawaii,10410842.61,0.01B
+"Arts, Entertainment, and Recreation",Delaware,10334375.57,0.01B
+Finance and Insurance,Delaware,9842086.44,0.01B
+Utilities,Montana,9649930.6,0.01B
+Educational Services,South Dakota,9487096.43,0.01B
+Information,Rhode Island,9115609.47,0.01B
+Utilities,Wyoming,8817550.41,0.01B
+Utilities,Alaska,8393683.5,0.01B
+Management of Companies and Enterprises,Arkansas,8264972.77,0.01B
+Utilities,West Virginia,7509526.96,0.01B
+Management of Companies and Enterprises,New Mexico,6752341.57,0.01B
+Educational Services,Delaware,6638821.81,0.01B
+Utilities,Nebraska,6580290.16,0.01B
+Mining,New Jersey,6513521.6,0.01B
+Utilities,Nevada,6108423.75,0.01B
+"Agriculture, Forestry, Fishing and Hunting",Delaware,5678676.9,0.01B
+Information,Delaware,5660425.05,0.01B
+Information,North Dakota,5627248.86,0.01B
+Utilities,Utah,5519161.22,0.01B
+Utilities,South Carolina,5265297.17,0.01B
+Mining,Nebraska,5233913.91,0.01B
+Mining,South Dakota,5179898.92,0.01B
+Educational Services,North Dakota,5152473.28,0.01B
+Management of Companies and Enterprises,Maine,4855937.32,0.0B
+Utilities,South Dakota,4815968.74,0.0B
+Mining,Vermont,4809217.83,0.0B
+Utilities,Maine,4196240.97,0.0B
+Management of Companies and Enterprises,Montana,4139925.1,0.0B
+Management of Companies and Enterprises,South Carolina,3860284.85,0.0B
+Mining,Maine,3506975.08,0.0B
+Management of Companies and Enterprises,Nebraska,2886698.63,0.0B
+Utilities,Idaho,2864488.16,0.0B
+Mining,South Carolina,2859234.96,0.0B
+Utilities,New Hampshire,2572236.98,0.0B
+Management of Companies and Enterprises,South Dakota,2566922.03,0.0B
+Finance and Insurance,Alaska,2473976.32,0.0B
+Management of Companies and Enterprises,West Virginia,2425529.34,0.0B
+Utilities,Rhode Island,2362029.4,0.0B
+Mining,Idaho,2275859.05,0.0B
+Mining,Iowa,2111685.73,0.0B
+Management of Companies and Enterprises,Hawaii,2033707.92,0.0B
+Utilities,Hawaii,1869865.69,0.0B
+Mining,New Hampshire,1664820.89,0.0B
+Management of Companies and Enterprises,Wyoming,1467263.78,0.0B
+Management of Companies and Enterprises,Idaho,1410736.96,0.0B
+Utilities,Iowa,1324264.07,0.0B
+Utilities,North Dakota,1151682.92,0.0B
+Mining,Rhode Island,1101265.17,0.0B
+Management of Companies and Enterprises,Iowa,1065951.08,0.0B
+Management of Companies and Enterprises,Vermont,989193.5,0.0B
+Management of Companies and Enterprises,North Dakota,735580.8,0.0B
+Management of Companies and Enterprises,New Hampshire,642255.92,0.0B
+Mining,Hawaii,470461.0,0.0B
+Utilities,Delaware,461447.93,0.0B
+Management of Companies and Enterprises,Rhode Island,453823.5,0.0B
+Management of Companies and Enterprises,Delaware,387790.0,0.0B
+Mining,Delaware,69285.5,0.0B

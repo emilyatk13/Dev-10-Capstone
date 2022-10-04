@@ -4,7 +4,7 @@ As the global pandemic COVID 19 hit the U.S. Economy in 2019, the United States 
 We seek to provide an analysis that the government can apply should there ever be a need to implement something like the Paycheck Protection Program again. We will start with some exploratory research, aiming to understand what this program looked like in practice. In order to contextualize the impact of the PPP, we will also analyze contemporaneous unemployment data. From there, we will implement predictive modeling of data from the PPP to determine key factors in forecasting which borrowers will pay their loans. Our main questions that will guide this research are below.
 
 ## Essential Questions
-1. What types of business owners (gender, race, geography) received Payment Protection Plan loans? 
+1. What types of business owners (gender, race, geography) received Paycheck Protection Program loans? 
 2. Which industries (based on Census NAICS codes) received the largest amount of loans?
 3. How did businesses in each state and industry use the loans they received?  
 4. Was the quantity of loans given proportional to the demographic breakdown of business in each state/industry?
@@ -19,17 +19,23 @@ We seek to provide an analysis that the government can apply should there ever b
 - [Project Structure](#Project-Structure)
 - [Data Structure & ETL](#data-structure--etl)
 - [SQL Database](#SQL-Database)
+- [Machine Learning](#Machine-Learning)
+- [Visualization](#Visualization)
+- [Dash Deployment](#Dash-Deployment)
+- [Results](#Results)
 
 
 ## Reporting
-The procedures and findings of this project can be found in one of several reports found under /ProjectSpecifications/ directories. Summaries of the reports are the following:
+The procedures and findings of this project can be found in one of several reports found under [/ProjectSpecifications/](/ProjectSpecifications/) directories. Summaries of the reports are the following:
 
- 1. [ExecutiveSummary.pdf](ProjectSpecifications/ExecutiveSummary.pdf): Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources/
+ 1. [ExecutiveSummary.pdf](ProjectSpecifications/ExecutiveSummary.pdf): Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources.
  2. [ProjectManagementPlan.xlsx](ProjectSpecifications/ProjectManagementPlan.xlsx): Excel table with teammembers breakdown of daily/hourly assignments from start to finish.
  3. [DataSources.pdf](ProjectSpecifications/DataSources.pdf): PDF citing data sources. 
  4. [DataPlatformDiagram.png](ProjectSpecifications/DataPlatformDiagram.png): Diagram outlining the data processing pipeline and necessary components.
  5. [DataFlowDiagram.png](ProjectSpecifications/DataFlowDiagram.png): Diagram outlining the sequence of data transformation.
  6. [RepeatableETLReport.pdf](ProjectSpecifications/RepeatableETLReport.pdf): In-depth description of ETL process to get from extracting raw data, cleaning/transforming in databricks, and loading into the SQL database.
+ 
+ All coding for our cleaning, transoformation, loading, and amchine learning model can be found under the [/code/](/code/) directory. All code for our dashboard can be found under the [/DashBoard/](/DashbBoard/) directory. 
 
 
 ## Datasets
@@ -50,7 +56,7 @@ www.census.gov website: https://www.census.gov/data/developers/data-sets/abs.htm
 *Diagram outlining the data processing pipeline and necessary components.*
 
 ## Data Structure & ETL
-A comprehensive guide of our ETL process can be found at [INSERT LINK TO REPEATABLEETLREPORT.PDF], All data has been collected from U.S. Government agencies to ensure credibility. Information regarding the PPP has been obtained from the Small Business Administration. Information regarding the Business/Business Owner Demographics have been obtained from the Census Annual Business Survey. Information regarding Uemployment has been obtained from the Department of Labor Statistics. More information on these datasets can be found [here](#Datasets).
+A comprehensive guide of our ETL process can be found at [here](ProjectSpecifications/RepeatableETLReport.pdf), All data has been collected from U.S. Government agencies to ensure credibility. Information regarding the PPP has been obtained from the Small Business Administration. Information regarding the Business/Business Owner Demographics have been obtained from the Census Annual Business Survey. Information regarding Uemployment has been obtained from the Department of Labor Statistics. More information on these datasets can be found [here](#Datasets).
 
 After retrieving all relevant data for our research from these U.S. departments, we then begin the process of transformation to populate our SQL database. Our transformation of the data utilized Python Pandas & Apache Spark. General Transformation practices included removing null values, dropping unnecessary columns, removing aggregations already present so as to not skew our results, converting data into an appropriate type, and renaming columns for clarity. For the PPP datasets, we made the decision to combine the 13 csv files into a larger single csv so as it could be called upon more reliably. With transformation of the data completed, we then deploy all the data into our SQL Database through the use of Spark Databricks. 
 
@@ -78,3 +84,22 @@ This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relations
 *ERD of the SQL database structure.*
 
 
+## Machine Learning
+Throughout our analysis of the PPP data, we anchored our focus around what happened during the loan program. Who received the loans, how did they use it, was there a connection to unemployment rates? For machine learning, we shifted from focusing on what the loan program was like in practice to how to optimize future implementation of a similar program. Our group created a model that predicts whether or not a borrower will pay back their loan based on key information including the industry, age of the business, and the demographics of the owner. We ran an algorithm with 'K Nearest Neighbors' with the goal of producing the fewest false positives as lenders are risk averse. Should the United States ever run such a program again, the implementation of our model would allow them to select borrowers most likely to pay back their loans. Our full Machine Learning code with information comments can be found [here](code/PPP_ml_implementation.ipynb). 
+
+## Visualization
+
+
+The visualizations in the dashboard are created using both Plotly Express and Plotly Graph Objects. Plotly Express is used for it's native integration with Dash, a product created by Plotly. For any visualizations made outside of the Dash environment we have imported them as PNG files to be placed within the layout of the Dash page. For the graphs dynamically updated on pages, we chose to take the user’s dropdown input to call the relevant information from the Pandas DataFrames, which we then transformed into Plotly visualizations.
+
+## Dash Deployment
+
+For our dashboard, we utilized Plotly’s Dash in combination with Bootstrapping to create a viewable webpage. Dropdown menus, interactive graphs, and pre-run visuals then populate using Dash's Python library. For deployment of the dashboard, download all files as-is from the DashBoard folder. Inside the DashBoard folder, there is a folder called DashBoard-data. Do not unpack this folder, leave the folder as-is inside the DashBoard folder. The dashboard requires a config.py file with sensitive information. Please contact the owner of this github and request access. The config.py file contains all SQL table databases and variables for your own SQL username, SQL password, server, and port connected to the entire database.
+
+To deploy the dashboard, run the DashBoard.py file, do not closed the terminal, and paste the url given to you in the terminal. The url should be http://127.0.0.1:8050/ and will only run if the application is open and active in the terminal.
+
+## Results
+You can find the results to this capstone project in two areas:
+
+[PROJECT REPORT GITHUB PATH HERE]: Full explanation and summary of the project, including structure, methods, results, and recommendations.
+/dashboard/app.py: Run this file in a Python interpreter to view this projects supporting Dashboard.
