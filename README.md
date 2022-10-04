@@ -4,7 +4,7 @@ As the global pandemic COVID 19 hit the U.S. Economy in 2019, the United States 
 We seek to provide an analysis that the government can apply should there ever be a need to implement something like the Paycheck Protection Program again. We will start with some exploratory research, aiming to understand what this program looked like in practice. In order to contextualize the impact of the PPP, we will also analyze contemporaneous unemployment data. From there, we will implement predictive modeling of data from the PPP to determine key factors in forecasting which borrowers will pay their loans. Our main questions that will guide this research are below.
 
 ## Essential Questions
-1. What types of business owners (gender, race, geography) received Payment Protection Plan loans? 
+1. What types of business owners (gender, race, geography) received Paycheck Protection Program loans? 
 2. Which industries (based on Census NAICS codes) received the largest amount of loans?
 3. How did businesses in each state and industry use the loans they received?  
 4. Was the quantity of loans given proportional to the demographic breakdown of business in each state/industry?
@@ -19,12 +19,17 @@ We seek to provide an analysis that the government can apply should there ever b
 - [Project Structure](#Project-Structure)
 - [Data Structure & ETL](#data-structure--etl)
 - [SQL Database](#SQL-Database)
+- [Machine Learning](#Machine-Learning)
+- [Visualization](#Visualization)
+- [Dash Deployment](#Dash-Deployment)
+- [Results](#Results)
+- [References](#References)
 
 
 ## Reporting
 The procedures and findings of this project can be found in one of several reports found under /ProjectSpecifications/ directories. Summaries of the reports are the following:
 
- 1. [ExecutiveSummary.pdf](ProjectSpecifications/ExecutiveSummary.pdf): Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources/
+ 1. [ExecutiveSummary.pdf](ProjectSpecifications/ExecutiveSummary.pdf): Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources.
  2. [ProjectManagementPlan.xlsx](ProjectSpecifications/ProjectManagementPlan.xlsx): Excel table with teammembers breakdown of daily/hourly assignments from start to finish.
  3. [DataSources.pdf](ProjectSpecifications/DataSources.pdf): PDF citing data sources. 
  4. [DataPlatformDiagram.png](ProjectSpecifications/DataPlatformDiagram.png): Diagram outlining the data processing pipeline and necessary components.
@@ -77,4 +82,20 @@ This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relations
 ![ERD drawio (5)](https://user-images.githubusercontent.com/104226913/193344060-02c9fcb8-198a-4dd3-8985-231f168f81b2.png)
 *ERD of the SQL database structure.*
 
+
+## Machine Learning
+
+
+
+## Visualization
+
+
+## Dash Deployment
+
+
+## Results
+
+
+
+## References
 
