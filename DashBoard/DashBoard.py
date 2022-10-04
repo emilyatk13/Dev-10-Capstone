@@ -6,6 +6,8 @@ import plotly.express as px
 import pandas as pd
 import plotly.graph_objects as go
 import numpy as np
+import base64
+
 # import SQL database connection strings - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 from config2 import database
 from config2 import username
@@ -48,6 +50,8 @@ from Graph_Functions import createFig_Map_Unemployment_Claims
 from Graph_Functions import createFig_Scatter_Unemployment_Loans
 from Graph_Functions import createFig_Map_Loans_Dollar_Amount_by_State
 from Graph_Functions import createFig_Map_Percent_of_Borrwers_to_Businesses
+from Graph_Functions import ConfusionMatrix
+
 
 
 
@@ -78,15 +82,10 @@ Industry_Names = list(set(Bar_Chart_Demographics_Percent_Loans_Received["Industr
 Industry_Names.sort()
 Industry_List = ["All Industries"] + Industry_Names
 
+image_filename = './DashBoard/qrcode.png' # replace with your own image
+encoded_image = base64.b64encode(open(image_filename, 'rb').read())
 
-# dropdown_states = dcc.Dropdown(options=State_List,
-#                         value='Nation',  # initial value displayed when page first loads
-#                         clearable=False,
-#                         id = "state-dropdown")
-# dropdown_industries = dcc.Dropdown(options=Industry_List,
-#                         value='All Industries',  # initial value displayed when page first loads
-#                         clearable=False,
-#                         id = "industry-dropdown")
+
 
 
 
@@ -101,16 +100,16 @@ app.layout = html.Div(children=[
     """,
     style = {'display': 'inline-block', 'margin':200, 'margin-bottom':5, 'font-size': '20px', 'margin-top':5,'textAlign': 'center'}),
     html.P(children=
-    """
-    This interactive dashboard is a visual representation of the PPP data released from data.sbs.gov.
-    We also take a look at Unemployment numbers and census breakdowns during this time period with data released from www.bls.gov and www.census.gov, respectively.
+    dcc.Markdown("""
+    This interactive dashboard is a visual representation of the PPP data released from https://data.sba.gov/dataset/ppp-foia.
+    We also take a look at Unemployment numbers and census breakdowns during this time period with data released from https://www.bls.gov/ and https://www.census.gov/, respectively.
     What do the borrowers/businesses owners look like?
     Where did the loans go to? Who gave out these loans?
     Check out the differences between state and/or industries.
     Follow the money and see where it goes. We encourage you to draw your own conclusions.
     The bottom of this dashboard displays our machine learning loan decision analysis, which the government can apply
     should there ever be a need to implement something like PPP again.
-    """,
+    """),
     style = {'display': 'inline-block', 'margin':200, 'margin-bottom':15, 'font-size': '20px', 'margin-top':5,'textAlign': 'center'}),
     # 3 Maps - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     html.Div(className = "container", children=[
@@ -169,15 +168,38 @@ app.layout = html.Div(children=[
 
     # ML Graphs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     html.Div(className = "container", children=[
+    html.H2(children=' Loan Decision Analysis (ML)', style={'textAlign': 'center', 'font-size': '40px', 'margin-bottom':20, 'margin-top':30}),
+        dcc.Graph(
+            id='ML Confusion Matrix',
+            figure=ConfusionMatrix(),
+            style={'width': '100%', 'height': '40vh', 'display': 'inline-block', 'align':'center'}
+        ),
+    html.P(children=
+    dcc.Markdown("""
+    Throughout our analysis of the PPP data, we anchored our focus around what happened during the loan program.
+    Who received the loans, how did they use it, was there a connection to unemployment rates? For machine learning, we shifted from focusing on what the loan program was like in practice to how to optimize future implementation of a similar program.
+    Our group created a model that predicts whether or not a borrower will pay back their loan based on key information including the industry, age of the business, and the demographics of the owner.
+    We ran an algorithm with K Nearest Neighbors with the goal of producing the fewest false positives as lenders are risk averse. The confusion matrix, to the right, demonstrates the results. A key for interpreting the results is as follows:
+    - True positive: The algorithm accurately predicts that a borrower will pay back their loan
+    - False positive: The algorithm inaccurately predicts that a borrower will pay back their loan
+    - False negative: The algorithm inaccurately predicts that a borrower will not pay back their loan
+    - True negative: The algorithm accurately predicts that a borrower will not pay back their loan
+    """), style={'font-size': '20px', 'margin':50, 'margin-top':15, 'margin-bottom':45,}),
+    ]),
+
+
+    # Conclusion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    html.Div(className = "container", children=[
     html.H3(children="PPP Dash Conclusion",  style={'textAlign': 'center', 'font-size': '40px', 'margin-bottom':5, 'margin-top':25, 'text-decoration': 'underline'}),
     html.P(children=
-    """
+    dcc.Markdown("""
     We hope you found this interactive dashboard intuitive and informative in your exploration.
-    Please see our technical report and explore our project GitHub (emilyatk13/dev-10-capstone (github.com)) for a thorough discussion of these results.
+    Please see our technical report and explore our project GitHub (https://github.com/emilyatk13/dev-10-capstone) for a thorough discussion of these results.
     This capstone project is the creation of Adam Brewer, Emily Atkinson, Nolan Thomas, and Stephanie Leiva in coordination with the Dev 10 Bootcamp.
-    """,
-    style = {'display': 'inline-block', 'margin':200, 'font-size': '20px', 'margin-bottom':50, 'margin-top':15,'textAlign': 'center'}),
-
+    """),
+    style = {'display': 'inline-block', 'margin':200, 'font-size': '20px', 'margin-bottom':30, 'margin-top':15,'textAlign': 'center'}),
+    html.H4(children="Scan to view our Github",  style={'textAlign': 'center', 'font-size': '25px', 'margin-bottom':5, 'margin-top':25}),
+    html.Div(html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()), style={'height':'10%', 'width':'10%',}), style={'textAlign': 'center', 'margin-bottom':50})
     ])
 
 ])

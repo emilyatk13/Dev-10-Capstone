@@ -93,18 +93,18 @@ def CreateSpendingCategoryBarChart(df):
     sns.set_theme(style='whitegrid')
     breakdown_other = df[df['Breakdown'] != 'Payroll'].copy()
     breakdown_other = breakdown_other.groupby(["Category"], as_index = False)["Total"].sum().sort_values(by="Total", ascending = False)
-    fig = px.bar(breakdown_other, y='Category', x='Total', color='Category',
+    breakdown_other = breakdown_other.rename(columns = {"Total":"PPP Money Spent ($)"})
+    fig = px.bar(breakdown_other, y='Category', x='PPP Money Spent ($)', color='Category',
                 color_discrete_sequence = ["#342D7E",
                                             "#488AC7",
                                             "#151B8D",
                                             "#659EC7",
                                             "#43BFC7"],
                 orientation='h',
-                hover_data=[breakdown_other.Category, breakdown_other.Total]
+                hover_data=[breakdown_other.Category, breakdown_other['PPP Money Spent ($)']]
                 )
     fig.update_layout(plot_bgcolor = '#DCE4E6',
                     legend=dict(title='Category'),
-                    height = 676,
                     showlegend=True,
                     title = dict(text = 'How Borrowers Spent PPP Money<br>(with Payroll removed)')
                     )
@@ -171,7 +171,7 @@ def createFig_Scatter_Unemployment_Loans(df):
     # wanted figure
     fig = px.scatter(df, x="Total Unemployment Claims", y="Total PPP Loans",hover_name = "State", size='Total Loan Amount ($)', color='Region')
     fig.update_layout(
-    title_text = 'Number of PPP Loans vs Total Unemployment Claims from 4/2020 - 3/2021 by State',
+    title_text = 'Number of PPP Loans vs Total Unemployment Claims<br>from 4/2020 - 3/2021 by State',
     autosize=True
     )
     fig.update_layout(paper_bgcolor = '#DCE4E6', plot_bgcolor = '#DCE4E6')
@@ -240,3 +240,23 @@ def createFig_Map_Percent_of_Borrwers_to_Businesses(df):
     fig.update_layout(geo=dict(bgcolor= '#DCE4E6'))
     return fig
 
+def ConfusionMatrix():
+        c_m = [ [576, 647], 
+        [7951, 546]  ]
+        fig = go.Figure(data=go.Heatmap(z=c_m,
+                        text = [['False Negative (647)', 'True Negative (576)'],
+                                ['True Positive (7951)', 'False Positive (546)', ]],
+                        texttemplate = "%{text}",
+                        colorscale = 'Blues',
+                        hoverongaps = True
+                        )
+        )
+        fig.update_traces(hovertemplate='%{text}')
+        fig.update_layout(title ='Machine Learning Confusion Matrix',
+                        xaxis_title = 'Actual Label',
+                        yaxis_title = 'Predicted Label')
+        fig.update_xaxes(showticklabels=False)
+        fig.update_yaxes(showticklabels=False)
+        fig.update_layout(paper_bgcolor = '#DCE4E6', plot_bgcolor = '#DCE4E6')
+        fig.update_layout(geo=dict(bgcolor= '#DCE4E6'))
+        return fig
