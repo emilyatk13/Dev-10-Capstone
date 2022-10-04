@@ -89,12 +89,14 @@ This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relations
 
 ## Visualization
 
-The graphs and visualizations for the Dash environment are made using plotly express. plotly express is used for it's native integration with Dash, a product created by Plotly. They are created inside Python, sent as a raw image, and directly referenced by url. In the Dash environment, when the user selects different dropdowns, the visuals are updated and auto-repopulated with the correct information.
 
-For the visualization of the Machine Learning model, seaborne--a Python data visualization library based on matplotlib--is utilized. It provides a high-level interface for drawing attractive and informative statistical graphics. seaborne is chosen as it integrates closely with pandas data structures. For these images they are created inside Python and exported as .png files where the raw image is directly referenced by url. 
+The visualizations in the dashboard are created using both Plotly Express and Plotly Graph Objects. Plotly Express is used for it's native integration with Dash, a product created by Plotly. For any visualizations made outside of the Dash environment we have imported them as PNG files to be placed within the layout of the Dash page. For the graphs dynamically updated on pages, we chose to take the user’s dropdown input to call the relevant information from the Pandas DataFrames, which we then transformed into Plotly visualizations.
 
 ## Dash Deployment
 
+For our dashboard, we utilized Plotly’s Dash in combination with Bootstrapping to create a viewable webpage. Dropdown menus, interactive graphs, and pre-run visuals then populate using Dash's Python library. For deployment of the dashboard, download all files as-is from the DashBoard folder. Inside the DashBoard folder, there is a folder called DashBoard-data. Do not unpack this folder, leave the folder as-is inside the DashBoard folder. The dashboard requires a config.py file with sensitive information. Please contact the owner of this github and request access. The config.py file contains all SQL table databases and variables for your own SQL username, SQL password, server, and port connected to the entire database.
+
+To deploy the dashboard, run the DashBord.py file, do not closed the terminal, and paste the url given to you in the terminal. The url should be http://127.0.0.1:8050/ and will only run if the application is open and active in the terminal.
 
 ## Results
 
