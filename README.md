@@ -26,7 +26,7 @@ We seek to provide an analysis that the government can apply should there ever b
 
 
 ## Reporting
-The procedures and findings of this project can be found in one of several reports found under /ProjectSpecifications/ directories. Summaries of the reports are the following:
+The procedures and findings of this project can be found in one of several reports found under [/ProjectSpecifications/](/ProjectSpecifications/) directories. Summaries of the reports are the following:
 
  1. [ExecutiveSummary.pdf](ProjectSpecifications/ExecutiveSummary.pdf): Description of the high-level aims of the project, including introduction to project, key questions, datasets, and sources.
  2. [ProjectManagementPlan.xlsx](ProjectSpecifications/ProjectManagementPlan.xlsx): Excel table with teammembers breakdown of daily/hourly assignments from start to finish.
