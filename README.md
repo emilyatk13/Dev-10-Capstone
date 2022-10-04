@@ -23,7 +23,6 @@ We seek to provide an analysis that the government can apply should there ever b
 - [Visualization](#Visualization)
 - [Dash Deployment](#Dash-Deployment)
 - [Results](#Results)
-- [References](#References)
 
 
 ## Reporting
@@ -99,8 +98,7 @@ For our dashboard, we utilized Plotly’s Dash in combination with Bootstrapping
 To deploy the dashboard, run the DashBord.py file, do not closed the terminal, and paste the url given to you in the terminal. The url should be http://127.0.0.1:8050/ and will only run if the application is open and active in the terminal.
 
 ## Results
+You can find the results to this capstone project in two areas:
 
-
-
-## References
-
+[PROJECT REPORT GITHUB PATH HERE]: Full explanation and summary of the project, including structure, methods, results, and recommendations.
+/dashboard/app.py: Run this file in a Python interpreter to view this projects supporting Dashboard.
