@@ -1,0 +1,51 @@
+StateName,StateAcronym,LoanNumber,Percent of Loans
+Alabama,AL,96417,1.31
+Alaska,AK,2412,0.03
+Arizona,AZ,91143,1.23
+Arkansas,AR,50932,0.69
+California,CA,657994,8.92
+Colorado,CO,146171,1.98
+Connecticut,CT,72267,0.98
+Delaware,DE,14186,0.19
+Florida,FL,610416,8.27
+Georgia,GA,368969,5.0
+Hawaii,HI,24051,0.33
+Idaho,ID,18195,0.25
+Illinois,IL,396238,5.37
+Indiana,IN,128921,1.75
+Iowa,IA,150856,2.04
+Kansas,KS,96935,1.31
+Kentucky,KY,115571,1.57
+Louisiana,LA,135745,1.84
+Maine,ME,45288,0.61
+Maryland,MD,92793,1.26
+Massachusetts,MA,168810,2.29
+Michigan,MI,227913,3.09
+Minnesota,MN,143419,1.94
+Mississippi,MS,116682,1.58
+Missouri,MO,134452,1.82
+Montana,MT,45067,0.61
+Nebraska,NE,96091,1.3
+Nevada,NV,86278,1.17
+New Hampshire,NH,25413,0.34
+New Jersey,NJ,170522,2.31
+New Mexico,NM,37458,0.51
+New York,NY,469743,6.36
+North Carolina,NC,106211,1.44
+North Dakota,ND,46522,0.63
+Ohio,OH,245858,3.33
+Oklahoma,OK,127144,1.72
+Oregon,OR,102185,1.38
+Pennsylvania,PA,236049,3.2
+Rhode Island,RI,26654,0.36
+South Carolina,SC,113901,1.54
+South Dakota,SD,61595,0.83
+Tennessee,TN,157385,2.13
+Texas,TX,622629,8.44
+Utah,UT,12762,0.17
+Vermont,VT,20515,0.28
+Virginia,VA,140960,1.91
+Washington,WA,146183,1.98
+West Virginia,WV,24521,0.33
+Wisconsin,WI,127664,1.73
+Wyoming,WY,24326,0.33
