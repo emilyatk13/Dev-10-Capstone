@@ -16,18 +16,18 @@ Heat_Map_Percent_of_Borrwers_to_Businesses = pd.read_csv("./DashBoard/DashBoard_
 
 
 # Graphs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-from Graph_Functions import createFig_Map_Loans_Precent_by_State
-from Graph_Functions import createFig_Bar_Race_Demographics
-from Graph_Functions import createFig_BarH_Top_Industries
-from Graph_Functions import CreateDonutChart
-from Graph_Functions import CreateSpendingCategoryBarChart
-from Graph_Functions import createFig_Stacked_Cluster_PPP_vs_Census
-from Graph_Functions import createFig_bar_Top_Lenders
-from Graph_Functions import createFig_Map_Unemployment_Claims
-from Graph_Functions import createFig_Scatter_Unemployment_Loans
-from Graph_Functions import createFig_Map_Loans_Dollar_Amount_by_State
-from Graph_Functions import createFig_Map_Percent_of_Borrwers_to_Businesses
-from Graph_Functions import ConfusionMatrix
+from DashBoard.Graph_Functions import createFig_Map_Loans_Precent_by_State
+from DashBoard.Graph_Functions import createFig_Bar_Race_Demographics
+from DashBoard.Graph_Functions import createFig_BarH_Top_Industries
+from DashBoard.Graph_Functions import CreateDonutChart
+from DashBoard.Graph_Functions import CreateSpendingCategoryBarChart
+from DashBoard.Graph_Functions import createFig_Stacked_Cluster_PPP_vs_Census
+from DashBoard.Graph_Functions import createFig_bar_Top_Lenders
+from DashBoard.Graph_Functions import createFig_Map_Unemployment_Claims
+from DashBoard.Graph_Functions import createFig_Scatter_Unemployment_Loans
+from DashBoard.Graph_Functions import createFig_Map_Loans_Dollar_Amount_by_State
+from DashBoard.Graph_Functions import createFig_Map_Percent_of_Borrwers_to_Businesses
+from DashBoard.Graph_Functions import ConfusionMatrix
 
 
 # DashBoard - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
