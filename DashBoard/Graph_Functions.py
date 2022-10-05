@@ -21,12 +21,6 @@ else:
     from DashBoard.config2 import password
     from DashBoard.config2 import server
 
-# import SQL database connection strings
-# from DashBoard.config2 import database
-# from DashBoard.config2 import username
-# from DashBoard.config2 import password
-# from DashBoard.config2 import server
-
 def unit_labeler(x):
     result = ''
     dollar_units = [["k", 1_000], ["M", 1_000_000], ["B", 1_000_000_000]]
