@@ -1,41 +1,18 @@
 import dash
 import dash_bootstrap_components as dbc
-from dash import Input, Output, State, dcc, html
+from dash import Input, Output, dcc, html
 import dash_html_components as html
 import plotly.express as px
 import pandas as pd
-import plotly.graph_objects as go
 import numpy as np
 import base64
 
-# import SQL database connection strings - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-from config2 import database
-from config2 import username
-from config2 import password
-from config2 import server
-
-
 # Data - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-# from Data_for_Graphs import Heat_Map_Percent_Loans_Received_Quantity
-# from Data_for_Graphs import Bar_Chart_Demographics_Percent_Loans_Received
-# from Data_for_Graphs import Bar_Chart_Top_10_Industries
-# from Data_for_Graphs import Tree_Plot_Utilities
-# from Data_for_Graphs import Cluster_Stacked_Bar_Chart_Demographics_PPP_Census
-# from Data_for_Graphs import Unemployment_data
-# from Data_for_Graphs import Top_Lender_data
-# from Data_for_Graphs import Heat_Map_Unforgiven_Loans
 Heat_Map_Percent_Loans_Received_Quantity = pd.read_csv("./DashBoard/DashBoard_Data/Heat_Map_Percent_Loans_Received_Quantity.csv", sep = ',', header = 0)
 Bar_Chart_Demographics_Percent_Loans_Received = pd.read_csv("./DashBoard/DashBoard_Data/Bar_Chart_Demographics_Percent_Loans_Received.csv", sep = ',', header = 0)
-Bar_Chart_Top_10_Industries = pd.read_csv("./DashBoard/DashBoard_Data/Bar_Chart_Top_10_Industries.csv", sep = ',', header = 0)
-Plot_Utilities = pd.read_csv("./DashBoard/DashBoard_Data/Plot_Utilities.csv", sep = ',', header = 0)
-Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = pd.read_csv("./DashBoard/DashBoard_Data/Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.csv", sep = ',', header = 0)
 Unemployment_data = pd.read_csv("./DashBoard/DashBoard_Data/Unemployment_data.csv", sep = ',', header = 0)
-Top_Lender_data = pd.read_csv("./DashBoard/DashBoard_Data/Top_Lender_data.csv", sep = ',', header = 0)
-Heat_Map_Unforgiven_Loans = pd.read_csv("./DashBoard/DashBoard_Data/Heat_Map_Unforgiven_Loans.csv", sep = ',', header = 0)
 Heat_Map_Dollar_Amount_of_Loans_Received = pd.read_csv("./DashBoard/DashBoard_Data/Heat_Map_Dollar_Amount_of_Loans_Received.csv", sep = ',', header = 0)
 Heat_Map_Percent_of_Borrwers_to_Businesses = pd.read_csv("./DashBoard/DashBoard_Data/Heat_Map_Percent_of_Borrwers_to_Businesses.csv", sep = ',', header = 0)
-
-
 
 
 # Graphs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -53,19 +30,11 @@ from Graph_Functions import createFig_Map_Percent_of_Borrwers_to_Businesses
 from Graph_Functions import ConfusionMatrix
 
 
-
-
-
-
-
-
-
-
-
 # DashBoard - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-# link fontawesome to get the chevron icons
+# link fontawesome 
 FA = "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 app = dash.Dash(external_stylesheets=[dbc.themes.SOLAR, FA])
+server = app.server
 
 mygraph_maps = dcc.Graph(figure={})
 dropdown_maps = dcc.Dropdown(options=['Percent of Recieved PPP Loans (%)', 'Cumulative Amount of PPP Loans Recieved ($)', 'Percent of Borrowers per Businesses by State (%)'],
@@ -242,7 +211,7 @@ def update_graph_demo(user_input_1, user_input_2):  # function arguments come fr
         Bar_Chart_Demographics_Percent_Loans_Received = Bar_Chart_Demographics_Percent_Loans_Received.drop("IndustryName", axis = 1)
         Bar_Chart_Demographics_Percent_Loans_Received = Bar_Chart_Demographics_Percent_Loans_Received.drop("StateName", axis = 1)
         Bar_Chart_Demographics_Percent_Loans_Received = Bar_Chart_Demographics_Percent_Loans_Received.groupby(["Race", "Sex"], as_index = False)["Percent of Loans"].sum()
-        fig_1 = createFig_Bar_Race_Demographics(Bar_Chart_Demographics_Percent_Loans_Received)
+        fig_1 = createFig_Bar_Race_Demographics(Bar_Chart_Demographics_Percent_Loans_Received, state, industry)
 
     elif(state == "Nation" and industry != "All Industries"):
         # Bar Chart Demographics
@@ -252,7 +221,7 @@ def update_graph_demo(user_input_1, user_input_2):  # function arguments come fr
         Bar_Chart_Demographics_Percent_Loans_Received = Bar_Chart_Demographics_Percent_Loans_Received.groupby(["Race", "Sex"], as_index = False)["LoanNumber"].sum()
         total_demo_loans = Bar_Chart_Demographics_Percent_Loans_Received["LoanNumber"].sum()
         Bar_Chart_Demographics_Percent_Loans_Received["Percent of Loans"] = round(Bar_Chart_Demographics_Percent_Loans_Received["LoanNumber"] / total_demo_loans * 100, 2)
-        fig_1 = createFig_Bar_Race_Demographics(Bar_Chart_Demographics_Percent_Loans_Received)
+        fig_1 = createFig_Bar_Race_Demographics(Bar_Chart_Demographics_Percent_Loans_Received, state, industry)
 
     elif(state != "Nation" and industry == "All Industries"):
         # Bar Chart Demographics
@@ -262,7 +231,7 @@ def update_graph_demo(user_input_1, user_input_2):  # function arguments come fr
         Bar_Chart_Demographics_Percent_Loans_Received = Bar_Chart_Demographics_Percent_Loans_Received.groupby(["Race", "Sex"], as_index = False)["LoanNumber"].sum()
         total_demo_loans = Bar_Chart_Demographics_Percent_Loans_Received["LoanNumber"].sum()
         Bar_Chart_Demographics_Percent_Loans_Received["Percent of Loans"] = round(Bar_Chart_Demographics_Percent_Loans_Received["LoanNumber"] / total_demo_loans * 100, 2)
-        fig_1 = createFig_Bar_Race_Demographics(Bar_Chart_Demographics_Percent_Loans_Received)
+        fig_1 = createFig_Bar_Race_Demographics(Bar_Chart_Demographics_Percent_Loans_Received, state, industry)
 
     else:
         # Bar Chart Demographics
@@ -272,11 +241,39 @@ def update_graph_demo(user_input_1, user_input_2):  # function arguments come fr
         Bar_Chart_Demographics_Percent_Loans_Received = Bar_Chart_Demographics_Percent_Loans_Received.groupby(["Race", "Sex"], as_index = False)["LoanNumber"].sum()
         total_demo_loans = Bar_Chart_Demographics_Percent_Loans_Received["LoanNumber"].sum()
         Bar_Chart_Demographics_Percent_Loans_Received["Percent of Loans"] = round(Bar_Chart_Demographics_Percent_Loans_Received["LoanNumber"] / total_demo_loans * 100, 2)
-        fig_1 = createFig_Bar_Race_Demographics(Bar_Chart_Demographics_Percent_Loans_Received)
+        fig_1 = createFig_Bar_Race_Demographics(Bar_Chart_Demographics_Percent_Loans_Received, state, industry)
 
 
     return fig_1
 
+def add_missing_data(records):
+    Race_list = ["Asian", "Black", "White"]
+    Sex_list = ["Male", "Female"]
+    Origin_list = ["PPP", "Census"]
+    Record_Master_list = []
+    for race in Race_list:
+        for sex in Sex_list:
+            for origin in Origin_list:
+                record = {'Race': race, 'TotalRacePerSex': 0, 'Sex':sex, 'Origin':origin}
+                Record_Master_list.append(record)
+
+    matser_record_index = []
+    for i, m_record in enumerate(Record_Master_list):
+        match = 0
+        for record in records:
+            temp_record = record.copy()
+            temp_m_record = m_record.copy()
+            del temp_record["TotalRacePerSex"]
+            del temp_m_record["TotalRacePerSex"]
+            equal = temp_record == temp_m_record
+            if(equal):
+                match+=1
+        if(match == 0):
+            matser_record_index.append(i)
+
+    for record_index in matser_record_index:
+        records.append(Record_Master_list[record_index])
+    return records
 
 # PPP vs Census
 @app.callback(
@@ -293,8 +290,9 @@ def update_graph_PPPvCensus(user_input_1, user_input_2):  # function arguments c
         # Stacked Cluster Proportion PPP vs Census
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.drop("IndustryName", axis = 1)
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.drop("StateName", axis = 1)
-        Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.groupby(["Race", "Origin","Sex"], as_index = False)["PercentOfRace"].sum()
-        fig_2 = createFig_Stacked_Cluster_PPP_vs_Census(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census)
+        Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.groupby(["Race", "Origin","Sex","TotalRace"], as_index = False)['TotalRacePerSex'].sum()
+        Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"] = round((Cluster_Stacked_Bar_Chart_Demographics_PPP_Census['TotalRacePerSex']/Cluster_Stacked_Bar_Chart_Demographics_PPP_Census['TotalRace']) * 100, 2)
+        fig_2 = createFig_Stacked_Cluster_PPP_vs_Census(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census, state, industry)
 
     elif(state == "Nation" and industry != "All Industries"):
         # Stacked Cluster Proportion PPP vs Census
@@ -308,7 +306,7 @@ def update_graph_PPPvCensus(user_input_1, user_input_2):  # function arguments c
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["RacePerSexPerSurveyTotals"] = double
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"] = round(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["TotalRacePerSex"] / Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["RacePerSexPerSurveyTotals"] * 100, 2)
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"] = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"].fillna(0)
-        fig_2 = createFig_Stacked_Cluster_PPP_vs_Census(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census)
+        fig_2 = createFig_Stacked_Cluster_PPP_vs_Census(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census, state, industry)
 
     elif(state != "Nation" and industry == "All Industries"):
         # Stacked Cluster Proportion PPP vs Census
@@ -322,13 +320,16 @@ def update_graph_PPPvCensus(user_input_1, user_input_2):  # function arguments c
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["RacePerSexPerSurveyTotals"] = double
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"] = round(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["TotalRacePerSex"] / Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["RacePerSexPerSurveyTotals"] * 100, 2)
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"] = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"].fillna(0)
-        fig_2 = createFig_Stacked_Cluster_PPP_vs_Census(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census)
+        fig_2 = createFig_Stacked_Cluster_PPP_vs_Census(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census, state, industry)
 
     else:
          # Stacked Cluster Proportion PPP vs Census
-        Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.drop("PercentOfRace", axis = 1)
+        Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.drop(["PercentOfRace", "TotalRace"], axis = 1)
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census[Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["StateName"] == state]
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census[Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["IndustryName"] == industry]
+        Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.drop(["IndustryName", "StateName"], axis = 1)
+        Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = pd.DataFrame.from_records(add_missing_data(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.to_dict('records'))).sort_values(by = ["Race", "Origin", "Sex"], ascending=True)
+        Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.sort_values(by = ["Race", "Origin", "Sex"], ascending=True)
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.groupby(["Race", "Origin","Sex"], as_index = False)["TotalRacePerSex"].sum()
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["RacePerSexPerSurveyTotals"] = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census.groupby(["Race", "Origin"], as_index = False)["TotalRacePerSex"].sum()[["TotalRacePerSex"]]
         double = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census[["RacePerSexPerSurveyTotals"]]
@@ -336,7 +337,7 @@ def update_graph_PPPvCensus(user_input_1, user_input_2):  # function arguments c
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["RacePerSexPerSurveyTotals"] = double
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"] = round(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["TotalRacePerSex"] / Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["RacePerSexPerSurveyTotals"] * 100, 2)
         Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"] = Cluster_Stacked_Bar_Chart_Demographics_PPP_Census["PercentOfRace"].fillna(0)
-        fig_2 = createFig_Stacked_Cluster_PPP_vs_Census(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census)
+        fig_2 = createFig_Stacked_Cluster_PPP_vs_Census(Cluster_Stacked_Bar_Chart_Demographics_PPP_Census, state, industry)
 
 
     return fig_2
@@ -385,12 +386,12 @@ def update_graph_top_industry(user_input_1):  # function arguments come from the
         Industry_to_LoanAmount_["Cummulative Loan Amount Billions"] = round(Industry_to_LoanAmount_["Cummulative Loan Amount ($)"]/1_000_000_000, 2).astype(str) +"B"
         Industry_to_LoanAmount_ = Industry_to_LoanAmount_.head(5)
         Industry_to_LoanAmount_["IndustryName"] = label_break(list(Industry_to_LoanAmount_["IndustryName"]))
-        fig_3 = createFig_BarH_Top_Industries(Industry_to_LoanAmount_)
+        fig_3 = createFig_BarH_Top_Industries(Industry_to_LoanAmount_, state)
     else: 
         Industry_to_LoanAmount_ = Bar_Chart_Top_10_Industries[Bar_Chart_Top_10_Industries["StateName"] == state]
         Industry_to_LoanAmount_ = Industry_to_LoanAmount_.head(5)
         Industry_to_LoanAmount_["IndustryName"] = label_break(list(Industry_to_LoanAmount_["IndustryName"]))
-        fig_3 = createFig_BarH_Top_Industries(Industry_to_LoanAmount_)
+        fig_3 = createFig_BarH_Top_Industries(Industry_to_LoanAmount_, state)
 
     return fig_3
 
@@ -412,7 +413,7 @@ def update_graph_top_lender(user_input_1, user_input_2):  # function arguments c
         lender_ = lender_.groupby(["Lender Name"], as_index = False)["Number of Loans Given"].sum().sort_values(by= "Number of Loans Given", ascending = False)
         lender_ = lender_.head(5)
         lender_["Lender Name"] = label_break(list(lender_["Lender Name"]))
-        fig_4 = createFig_bar_Top_Lenders(lender_)
+        fig_4 = createFig_bar_Top_Lenders(lender_, state, industry)
 
     elif(state == "Nation" and industry != "All Industries"):
         lender_ = lender[lender["IndustryName"] == industry]
@@ -420,7 +421,7 @@ def update_graph_top_lender(user_input_1, user_input_2):  # function arguments c
         lender_ = lender_.groupby(["Lender Name"], as_index = False)["Number of Loans Given"].sum().sort_values(by= "Number of Loans Given", ascending = False)
         lender_ = lender_.head(5)
         lender_["Lender Name"] = label_break(list(lender_["Lender Name"]))
-        fig_4 = createFig_bar_Top_Lenders(lender_)
+        fig_4 = createFig_bar_Top_Lenders(lender_, state, industry)
 
     elif(state != "Nation" and industry == "All Industries"):
         lender_ = lender[lender["StateName"] == state]
@@ -428,7 +429,7 @@ def update_graph_top_lender(user_input_1, user_input_2):  # function arguments c
         lender_ = lender_.groupby(["Lender Name"], as_index = False)["Number of Loans Given"].sum().sort_values(by= "Number of Loans Given", ascending = False)
         lender_ = lender_.head(5)
         lender_["Lender Name"] = label_break(list(lender_["Lender Name"]))
-        fig_4 = createFig_bar_Top_Lenders(lender_)
+        fig_4 = createFig_bar_Top_Lenders(lender_, state, industry)
 
     else: 
         lender_ = lender[lender["StateName"] == state]
@@ -436,7 +437,7 @@ def update_graph_top_lender(user_input_1, user_input_2):  # function arguments c
         lender_ = lender_.groupby(["Lender Name"], as_index = False)["Number of Loans Given"].sum().sort_values(by= "Number of Loans Given", ascending = False)
         lender_ = lender_.head(5)
         lender_["Lender Name"] = label_break(list(lender_["Lender Name"]))
-        fig_4 = createFig_bar_Top_Lenders(lender_)
+        fig_4 = createFig_bar_Top_Lenders(lender_, state, industry)
 
     return fig_4
 
@@ -458,45 +459,45 @@ def update_graph_top_industry(user_input_1, user_input_2, user_input_3):  # func
     if(utility == "Payroll and Other Utilities"):
         if(state == "Nation" and industry == "All Industries"):
             df_utilities = df_utilities.drop(["StateName", "StateAcronym", "IndustryName"], axis = 1)
-            fig_5 = CreateDonutChart(df_utilities)
+            fig_5 = CreateDonutChart(df_utilities, state, industry)
 
         elif(state == "Nation" and industry != "All Industries"):
             df_utilities = df_utilities.drop(["StateAcronym","StateName"], axis = 1)
             df_utilities = df_utilities[df_utilities["IndustryName"] == industry]
-            fig_5 = CreateDonutChart(df_utilities)
+            fig_5 = CreateDonutChart(df_utilities, state, industry)
 
         elif(state != "Nation" and industry == "All Industries"):
             df_utilities = df_utilities.drop(["IndustryName"], axis = 1)
             df_utilities = df_utilities[df_utilities["StateName"] == state]
-            fig_5 = CreateDonutChart(df_utilities)
+            fig_5 = CreateDonutChart(df_utilities, state, industry)
 
         else: 
             df_utilities = df_utilities[df_utilities["IndustryName"] == industry]
             df_utilities = df_utilities[df_utilities["StateName"] == state]
-            fig_5 = CreateDonutChart(df_utilities)
+            fig_5 = CreateDonutChart(df_utilities, state, industry)
     else:
         if(state == "Nation" and industry == "All Industries"):
             df_utilities = df_utilities.drop(["StateName", "StateAcronym", "IndustryName"], axis = 1)
             df_utilities = df_utilities.groupby(["Breakdown", "Category", "Percent"], as_index = False)["Total"].sum().sort_values(by="Total", ascending = False)
-            fig_5 = CreateSpendingCategoryBarChart(df_utilities)
+            fig_5 = CreateSpendingCategoryBarChart(df_utilities, state, industry)
 
         elif(state == "Nation" and industry != "All Industries"):
             df_utilities = df_utilities.drop(["StateName","StateAcronym"], axis = 1)
             df_utilities = df_utilities[df_utilities["IndustryName"] == industry]
             df_utilities = df_utilities.groupby(["Breakdown", "Category", "Percent"], as_index = False)["Total"].sum().sort_values(by="Total", ascending = False)
-            fig_5 = CreateSpendingCategoryBarChart(df_utilities)
+            fig_5 = CreateSpendingCategoryBarChart(df_utilities, state, industry)
 
         elif(state != "Nation" and industry == "All Industries"):
             df_utilities = df_utilities.drop(["IndustryName"], axis = 1)
             df_utilities = df_utilities[df_utilities["StateName"] == state]
             df_utilities = df_utilities.groupby(["Breakdown", "Category", "Percent"], as_index = False)["Total"].sum().sort_values(by="Total", ascending = False)
-            fig_5 = CreateSpendingCategoryBarChart(df_utilities)
+            fig_5 = CreateSpendingCategoryBarChart(df_utilities, state, industry)
 
         else: 
             df_utilities = df_utilities[df_utilities["IndustryName"] == industry]
             df_utilities = df_utilities[df_utilities["StateName"] == state]
             df_utilities = df_utilities.groupby(["Breakdown", "Category", "Percent"], as_index = False)["Total"].sum().sort_values(by="Total", ascending = False)
-            fig_5 = CreateSpendingCategoryBarChart(df_utilities)
+            fig_5 = CreateSpendingCategoryBarChart(df_utilities, state, industry)
 
     return fig_5
 
