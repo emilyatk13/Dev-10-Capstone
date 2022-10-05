@@ -3,12 +3,29 @@ import pandas as pd
 import pymssql
 import seaborn as sns
 import plotly.graph_objects as go
+import os
+
+# If we are in production, make sure we DO NOT use the debug mode
+if os.environ.get('ENV') == 'production':
+    # Heroku gives us an environment variable called DATABASE_URL when we add a postgres database
+    #app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+    database =  os.environ.get('DATABASE')
+    username =  os.environ.get('USERNAME')
+    password =  os.environ.get('PASSWORD')
+    server =  os.environ.get('SERVER')
+else:
+    #app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://localhost/flask-heroku'
+    # import SQL database connection strings
+    from DashBoard.config2 import database
+    from DashBoard.config2 import username
+    from DashBoard.config2 import password
+    from DashBoard.config2 import server
 
 # import SQL database connection strings
-from DashBoard.config2 import database
-from DashBoard.config2 import username
-from DashBoard.config2 import password
-from DashBoard.config2 import server
+# from DashBoard.config2 import database
+# from DashBoard.config2 import username
+# from DashBoard.config2 import password
+# from DashBoard.config2 import server
 
 def unit_labeler(x):
     result = ''
