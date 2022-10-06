@@ -163,7 +163,7 @@ app.layout = html.Div(children=[
     """, mathjax=True)], style={'font-size': '25px', 'margin':50, 'margin-top':5, 'margin-bottom':15,'textAlign': 'center'}),
     dbc.Container([
     dcc.Markdown("""
-    $F_1$-score $= \\frac{2 \\times Precision \\times Recall}{Presicion + Recall} = 0.93$ &emsp;&emsp; Accuracy $= \\frac{TP + TN}{TP + TN + FP + FN} = 0.88$
+    $F_1$-score $= \\frac{2 \\times Precision \\times Sensitivity}{Presicion + Sensitivity} = 0.93$ &emsp;&emsp; Accuracy $= \\frac{TP + TN}{TP + TN + FP + FN} = 0.88$
     """, mathjax=True)], style={'font-size': '25px', 'margin':50, 'margin-top':15, 'margin-bottom':65,'textAlign': 'center'})
     ]),
 
