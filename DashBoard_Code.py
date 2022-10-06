@@ -2,7 +2,6 @@ import dash
 import dash_bootstrap_components as dbc
 from dash import Input, Output, dcc, html
 import dash_html_components as html
-import plotly.express as px
 import pandas as pd
 import numpy as np
 import base64
@@ -149,24 +148,35 @@ app.layout = html.Div(children=[
     Who received the loans, how did they use it, was there a connection to unemployment rates? For machine learning, we shifted from focusing on what the loan program was like in practice to how to optimize future implementation of a similar program.
     Our group created a model that predicts whether or not a borrower will pay back their loan based on key information including the industry, age of the business, and the demographics of the owner.
     We ran an algorithm with K Nearest Neighbors with the goal of producing the fewest false positives as lenders are risk averse. The confusion matrix, seen above, demonstrates the results. A key for interpreting the results is as follows:
-    - True positive: The algorithm accurately predicts that a borrower will pay back their loan
-    - False positive: The algorithm inaccurately predicts that a borrower will pay back their loan
-    - False negative: The algorithm inaccurately predicts that a borrower will not pay back their loan
-    - True negative: The algorithm accurately predicts that a borrower will not pay back their loan
-    """), style={'font-size': '20px', 'margin':50, 'margin-top':15, 'margin-bottom':45,}),
-    ]),
+    """), style={'font-size': '20px', 'margin':50, 'margin-top':15, 'margin-bottom':15,}),
 
+    html.P(children=
+    dcc.Markdown("""
+    True positive (TP): The algorithm accurately predicts that a borrower will pay back their loan  
+    False positive (FP): The algorithm inaccurately predicts that a borrower will pay back their loan  
+    False negative (FN): The algorithm inaccurately predicts that a borrower will not pay back their loan  
+    True negative (TN): The algorithm accurately predicts that a borrower will not pay back their loan  
+    """), style={'font-size': '20px', 'margin':50, 'margin-top':5, 'margin-bottom':25,'textAlign': 'center'}),
+    dbc.Container([
+    dcc.Markdown("""
+    Presicion $= \\frac{TP}{TP + FP} = 0.93$ &emsp;&emsp; Sensitivity $= \\frac{TP}{TP + FN} = 0.92$  
+    """, mathjax=True)], style={'font-size': '25px', 'margin':50, 'margin-top':5, 'margin-bottom':15,'textAlign': 'center'}),
+    dbc.Container([
+    dcc.Markdown("""
+    $F_1$-score $= \\frac{2 \\times Precision \\times Recall}{Presicion + Recall} = 0.93$ &emsp;&emsp; Accuracy $= \\frac{TP + TN}{TP + TN + FP + FN} = 0.88$
+    """, mathjax=True)], style={'font-size': '25px', 'margin':50, 'margin-top':15, 'margin-bottom':65,'textAlign': 'center'})
+    ]),
 
     # Conclusion - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     html.Div(className = "container", children=[
-    html.H3(children="PPP Dash Conclusion",  style={'textAlign': 'center', 'font-size': '40px', 'margin-bottom':5, 'margin-top':25, 'text-decoration': 'underline'}),
+    html.H3(children="PPP Dash Conclusion",  style={'textAlign': 'center', 'font-size': '40px', 'margin-bottom':5, 'margin-top':75, 'text-decoration': 'underline'}),
     html.P(children=
     dcc.Markdown("""
     We hope you found this interactive dashboard intuitive and informative in your exploration.
     Please see our technical report and explore our project GitHub (https://github.com/emilyatk13/dev-10-capstone) for a thorough discussion of these results.
     This capstone project is the creation of Adam Brewer, Emily Atkinson, Nolan Thomas, and Stephanie Leiva in coordination with the Dev 10 Bootcamp.
     """),
-    style = {'display': 'inline-block', 'margin':200, 'font-size': '20px', 'margin-bottom':30, 'margin-top':15,'textAlign': 'center'}),
+    style = {'display': 'inline-block', 'margin':200, 'font-size': '20px', 'margin-bottom':20, 'margin-top':15,'textAlign': 'center'}),
     html.H4(children="Scan to view our Github",  style={'textAlign': 'center', 'font-size': '25px', 'margin-bottom':5, 'margin-top':25}),
     html.Div(html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()), style={'height':'10%', 'width':'10%',}), style={'textAlign': 'center', 'margin-bottom':50})
     ])
