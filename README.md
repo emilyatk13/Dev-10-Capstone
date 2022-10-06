@@ -34,6 +34,9 @@ The procedures and findings of this project can be found in one of several repor
  4. [DataPlatformDiagram.png](ProjectSpecifications/DataPlatformDiagram.png): Diagram outlining the data processing pipeline and necessary components.
  5. [DataFlowDiagram.png](ProjectSpecifications/DataFlowDiagram.png): Diagram outlining the sequence of data transformation.
  6. [RepeatableETLReport.pdf](ProjectSpecifications/RepeatableETLReport.pdf): In-depth description of ETL process to get from extracting raw data, cleaning/transforming in databricks, and loading into the SQL database.
+ 7. [ProjectTechnicalReport](ProjectSpecifications/ProjectTechnicalReport.pdf): Full explanation and summary of the project, including structure, methods, results, and recommendations.
+ 8. [VisualizationsNapkinsAndFeedback.pdf](ProjectSpecifications/VisualizationsNapkinsAndFeedback.pdf): Napkin drawing and feedback from group 1 for our visualizations.
+ 9. [DashboardNapkinsAndFeedback.pdf](ProjectSpecifications/DashboardNapkinsAndFeedback.pdf): Napkin drawing abd feedback from group 1 for our dashboard.
  
  All coding for our cleaning, transoformation, loading, and amchine learning model can be found under the [/code/](/code/) directory. All code for our dashboard can be found under the [/DashBoard/](/DashbBoard/) directory. 
 
@@ -101,5 +104,5 @@ To deploy the dashboard, run the DashBoard.py file, do not closed the terminal, 
 ## Results
 You can find the results to this capstone project in two areas:
 
-[PROJECT REPORT GITHUB PATH HERE]: Full explanation and summary of the project, including structure, methods, results, and recommendations.
+[ProjectTechnicalReport](ProjectSpecifications/ProjectTechnicalReport.pdf): Full explanation and summary of the project, including structure, methods, results, and recommendations.
 /dashboard/app.py: Run this file in a Python interpreter to view this projects supporting Dashboard.
