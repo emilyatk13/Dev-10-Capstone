@@ -104,7 +104,7 @@ To deploy the dashboard, run the DashBoard_Code.py file using the terminal comma
 
 ## Heroku
 
-From our dashboard we utilized the cloud platorm Heroku to create a web app allowing easier access to our dahsboard at any time using the link: https://ppp-loans-dashboard.herokuapp.com. Heroku is a cloud platform that lets companies and developers build, deliver, monitor and scale apps which is the fastest way to go from idea to URL, bypassing all those infrastructure headaches. <br>
+From our dashboard we utilized the cloud platorm Heroku to create a web app allowing easier access to our dahsboard at any time using the link: https://ppp-loans-dashboard.herokuapp.com. If any of the titles of visuals are cut off or some visuals are too small to see we recommend adjusting the zoom and size of your browser until all visuals and titles are viewable. Heroku is a cloud platform that lets companies and developers build, deliver, monitor and scale apps which is the fastest way to go from idea to URL, bypassing all those infrastructure headaches. <br>
 To help set up this app we used the [Charming Data](https://www.youtube.com/c/CharmingData) Youtube channel instructional video [Deploy your First App with Heroku and Dash Plotly](https://www.youtube.com/watch?v=b-M2KQ6_bM4) which provided helpful step-by-step procedures to enable the web app.
 
 ## Results
