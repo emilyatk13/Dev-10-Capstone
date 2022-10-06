@@ -22,6 +22,7 @@ We seek to provide an analysis that the government can apply should there ever b
 - [Machine Learning](#Machine-Learning)
 - [Visualization](#Visualization)
 - [Dash Deployment](#Dash-Deployment)
+- [Heroku](#Heroku)
 - [Results](#Results)
 
 
@@ -88,7 +89,7 @@ This SQL Database is hosted on Microsoft Azure SQL Database. An Entity Relations
 
 
 ## Machine Learning
-Throughout our analysis of the PPP data, we anchored our focus around what happened during the loan program. Who received the loans, how did they use it, was there a connection to unemployment rates? For machine learning, we shifted from focusing on what the loan program was like in practice to how to optimize future implementation of a similar program. Our group created a model that predicts whether or not a borrower will pay back their loan based on key information including the industry, age of the business, and the demographics of the owner. We ran an algorithm with 'K Nearest Neighbors' with the goal of producing the fewest false positives as lenders are risk averse. Should the United States ever run such a program again, the implementation of our model would allow them to select borrowers most likely to pay back their loans. Our full Machine Learning code with information comments can be found [here](code/PPP_ml_implementation.ipynb). 
+Throughout our analysis of the PPP data, we anchored our focus around what happened during the loan program. Who received the loans, how did they use it, was there a connection to unemployment rates? For machine learning, we shifted from focusing on what the loan program was like in practice to how to optimize future implementation of a similar program. Our group created a model that predicts whether or not a borrower will pay back their loan based on key information including the industry, age of the business, and the demographics of the owner. We ran an algorithm with 'K Nearest Neighbors' using sklearn with the goal of producing the fewest false positives as lenders are risk averse. Should the United States ever run such a program again, the implementation of our model would allow them to select borrowers most likely to pay back their loans. Our full Machine Learning code with information comments can be found [here](code/PPP_ml_implementation.ipynb). 
 
 ## Visualization
 
@@ -99,10 +100,16 @@ The visualizations in the dashboard are created using both Plotly Express and Pl
 
 For our dashboard, we utilized Plotly’s Dash in combination with Bootstrapping to create a viewable webpage. Dropdown menus, interactive graphs, and pre-run visuals then populate using Dash's Python library. For deployment of the dashboard, download all files as-is from the DashBoard folder. Inside the DashBoard folder, there is a folder called DashBoard-data. Do not unpack this folder, leave the folder as-is inside the DashBoard folder. The dashboard requires a config.py file with sensitive information. Please contact the owner of this github and request access. The config.py file contains all SQL table databases and variables for your own SQL username, SQL password, server, and port connected to the entire database.
 
-To deploy the dashboard, run the DashBoard.py file, do not closed the terminal, and paste the url given to you in the terminal. The url should be http://127.0.0.1:8050/ and will only run if the application is open and active in the terminal.
+To deploy the dashboard, run the DashBoard_Code.py file using the terminal command `python DashBoard_Code.py` in the root folder, do not closed the terminal, then copy and paste the url given to you in the terminal to a web broweser. The url should be `http://127.0.0.1:8050/` and will only run if the application is open and active in the terminal.
+
+## Heroku
+
+From our dashboard we utilized the cloud platorm Heroku to create a web app allowing easier access to our dahsboard at any time using the link: https://ppp-loans-dashboard.herokuapp.com/. Heroku is a cloud platform that lets companies and developers build, deliver, monitor and scale apps which is the fastest way to go from idea to URL, bypassing all those infrastructure headaches. 
+To help set up this app we used the <a herf =https://www.youtube.com/c/CharmingData>Charming Data</a> Youtube channel instructional video <a herf=https://www.youtube.com/watch?v=b-M2KQ6_bM4>Deploy your First App with Heroku and Dash Plotly</a> which provided helpful step-by-step procedures to enable the web app.
 
 ## Results
-You can find the results to this capstone project in two areas:
+You can find the results to this capstone project in three areas:
 
-[ProjectTechnicalReport](ProjectSpecifications/ProjectTechnicalReport.pdf): Full explanation and summary of the project, including structure, methods, results, and recommendations.
-/dashboard/app.py: Run this file in a Python interpreter to view this projects supporting Dashboard.
+[ProjectTechnicalReport](ProjectSpecifications/ProjectTechnicalReport.pdf): Full explanation and summary of the project, including structure, methods, results, and recommendations.<br>
+DashBoard_Code.py: Run this file in a Python interpreter from the root folder to view this projects supporting Dashboard.<br>
+https://ppp-loans-dashboard.herokuapp.com/: Click on this link at anytime to bypass the setup of the dashboard and view the application using Heroku.
