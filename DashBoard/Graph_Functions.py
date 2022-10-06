@@ -188,7 +188,7 @@ def createFig_Map_Unemployment_Claims(df):
     marker_line_color = "black",
     locationmode = "USA-states"))
     fig.update_layout(
-    title_text = 'Percent of Unemployment Claims from 4/2020 - 3/2021 by State',
+    title_text = 'Percent of Unemployment Claims from 3/2020 - 4/2021 by State',
     geo_scope='usa', # limite map scope to USA
     )
     fig.update_layout(paper_bgcolor = '#DCE4E6', plot_bgcolor = '#DCE4E6')
@@ -203,7 +203,7 @@ def createFig_Scatter_Unemployment_Loans(df):
     # wanted figure
     fig = px.scatter(df, x="Total Unemployment Claims", y="Total PPP Loans",hover_name = "State", size='Total Loan Amount ($)', color='Region')
     fig.update_layout(
-    title_text = 'Number of PPP Loans vs Total Unemployment Claims<br>from 4/2020 - 3/2021 by State',
+    title_text = 'Number of PPP Loans vs Total Unemployment Claims<br>from 3/2020 - 4/2021 by State',
     autosize=True
     )
     fig.update_layout(paper_bgcolor = '#DCE4E6', plot_bgcolor = '#DCE4E6')
