@@ -65,7 +65,7 @@ After retrieving all relevant data for our research from these U.S. departments,
 
 
 **Static Data Stream** <br>
-![DataFlowDiagram](https://user-images.githubusercontent.com/104226913/194191035-bf00e8c8-8695-4d0a-aaa7-ced9d7fbb630.png)
+![DataFlowDiagram](https://user-images.githubusercontent.com/104226913/194191035-bf00e8c8-8695-4d0a-aaa7-ced9d7fbb630.png)<br>
 *Diagram outlining the sequence of data transformation.*
 
 **Unemployment Data Stream** <br>
