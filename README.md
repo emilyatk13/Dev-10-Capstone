@@ -112,4 +112,4 @@ You can find the results to this capstone project in three areas:
 
 [ProjectTechnicalReport](ProjectSpecifications/ProjectTechnicalReport.pdf): Full explanation and summary of the project, including structure, methods, results, and recommendations.<br>
 [DashBoard_Code.py](./DashBoard_Code.py): Run this file in a Python interpreter from the root folder to view this project's supporting Dashboard.<br>
-https://ppp-loans-dashboard.herokuapp.com: Click on this link at anytime to bypass the setup of the dashboard and view the application using Heroku. Important to note that this will take a few seconds to load when first using.
+https://ppp-loans-dashboard.herokuapp.com: Click on this link at anytime to bypass the setup of the dashboard and view the application using Heroku. It's important to note that this will take a few seconds to load when first using.
