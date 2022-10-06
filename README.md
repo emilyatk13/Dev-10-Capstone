@@ -104,12 +104,12 @@ To deploy the dashboard, run the DashBoard_Code.py file using the terminal comma
 
 ## Heroku
 
-From our dashboard we utilized the cloud platorm Heroku to create a web app allowing easier access to our dahsboard at any time using the link: https://ppp-loans-dashboard.herokuapp.com/. Heroku is a cloud platform that lets companies and developers build, deliver, monitor and scale apps which is the fastest way to go from idea to URL, bypassing all those infrastructure headaches. 
-To help set up this app we used the <a herf =https://www.youtube.com/c/CharmingData>Charming Data</a> Youtube channel instructional video <a herf=https://www.youtube.com/watch?v=b-M2KQ6_bM4>Deploy your First App with Heroku and Dash Plotly</a> which provided helpful step-by-step procedures to enable the web app.
+From our dashboard we utilized the cloud platorm Heroku to create a web app allowing easier access to our dahsboard at any time using the link: https://ppp-loans-dashboard.herokuapp.com. Heroku is a cloud platform that lets companies and developers build, deliver, monitor and scale apps which is the fastest way to go from idea to URL, bypassing all those infrastructure headaches. <br>
+To help set up this app we used the [Charming Data](https://www.youtube.com/c/CharmingData) Youtube channel instructional video [Deploy your First App with Heroku and Dash Plotly](https://www.youtube.com/watch?v=b-M2KQ6_bM4) which provided helpful step-by-step procedures to enable the web app.
 
 ## Results
 You can find the results to this capstone project in three areas:
 
 [ProjectTechnicalReport](ProjectSpecifications/ProjectTechnicalReport.pdf): Full explanation and summary of the project, including structure, methods, results, and recommendations.<br>
 DashBoard_Code.py: Run this file in a Python interpreter from the root folder to view this projects supporting Dashboard.<br>
-https://ppp-loans-dashboard.herokuapp.com/: Click on this link at anytime to bypass the setup of the dashboard and view the application using Heroku.
+https://ppp-loans-dashboard.herokuapp.com: Click on this link at anytime to bypass the setup of the dashboard and view the application using Heroku. Important to note that this will take a few seconds to load when first using.
