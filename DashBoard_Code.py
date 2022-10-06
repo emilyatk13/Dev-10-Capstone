@@ -59,8 +59,8 @@ encoded_image = base64.b64encode(open(image_filename, 'rb').read())
 
 
 app.layout = html.Div(children=[
-    html.H1(children='Paycheck Protection Program (PPP) Loans', style={'textAlign': 'center', 'font-size': '50px', 'text-decoration': 'underline'}),
-    html.H3(children="PPP Dash Introduction",  style={'textAlign': 'center', 'font-size': '30px', 'margin-bottom':5, 'margin-top':15,}),
+    html.H1(children='Paycheck Protection Program (PPP) Loans', style={'textAlign': 'center', 'font-size': '50px', 'text-decoration': 'underline', 'margin-bottom':25, 'margin-top':25}),
+    html.H3(children="PPP Dash Introduction",  style={'textAlign': 'center', 'font-size': '30px', 'margin-bottom':5, 'margin-top':35}),
     html.P(children=
     """
     As the global pandemic COVID-19 hit the U.S. Economy in 2019, the United States government implemented an unprecedented and large-scale solution to keep businesses(and by the extension, their employees, afloat).
@@ -79,7 +79,7 @@ app.layout = html.Div(children=[
     The bottom of this dashboard displays our machine learning loan decision analysis, which the government can apply
     should there ever be a need to implement something like PPP again.
     """),
-    style = {'display': 'inline-block', 'margin':200, 'margin-bottom':15, 'font-size': '20px', 'margin-top':5,'textAlign': 'center'}),
+    style = {'display': 'inline-block', 'margin':200, 'margin-bottom':25, 'font-size': '20px', 'margin-top':5,'textAlign': 'center'}),
     # 3 Maps - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     html.Div(className = "container", children=[
     html.H2(children='National PPP Overview', style={'textAlign': 'center', 'font-size': '40px'}),
