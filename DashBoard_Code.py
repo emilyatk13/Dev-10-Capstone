@@ -37,8 +37,8 @@ app = dash.Dash(external_stylesheets=[dbc.themes.SOLAR, FA])
 server = app.server
 
 mygraph_maps = dcc.Graph(figure={})
-dropdown_maps = dcc.Dropdown(options=['Percent of Recieved PPP Loans (%)', 'Cumulative Amount of PPP Loans Recieved ($)', 'Percent of Borrowers per Businesses by State (%)'],
-                        value='Percent of Recieved PPP Loans (%)',  # initial value displayed when page first loads
+dropdown_maps = dcc.Dropdown(options=['Percent of Received PPP Loans (%)', 'Cumulative Amount of PPP Loans Received ($)', 'Percent of Borrowers per Businesses by State (%)'],
+                        value='Percent of Received PPP Loans (%)',  # initial value displayed when page first loads
                         clearable=False,
                         style = {"color": "'#DCE4E6'"})
 
@@ -148,7 +148,7 @@ app.layout = html.Div(children=[
     Throughout our analysis of the PPP data, we anchored our focus around what happened during the loan program.
     Who received the loans, how did they use it, was there a connection to unemployment rates? For machine learning, we shifted from focusing on what the loan program was like in practice to how to optimize future implementation of a similar program.
     Our group created a model that predicts whether or not a borrower will pay back their loan based on key information including the industry, age of the business, and the demographics of the owner.
-    We ran an algorithm with K Nearest Neighbors with the goal of producing the fewest false positives as lenders are risk averse. The confusion matrix, to the right, demonstrates the results. A key for interpreting the results is as follows:
+    We ran an algorithm with K Nearest Neighbors with the goal of producing the fewest false positives as lenders are risk averse. The confusion matrix, seen above, demonstrates the results. A key for interpreting the results is as follows:
     - True positive: The algorithm accurately predicts that a borrower will pay back their loan
     - False positive: The algorithm inaccurately predicts that a borrower will pay back their loan
     - False negative: The algorithm inaccurately predicts that a borrower will not pay back their loan
@@ -182,10 +182,10 @@ app.layout = html.Div(children=[
     Input(dropdown_maps, component_property='value')
 )
 def update_graph_maps(user_input):  # function arguments come from the component property of the Input
-    if user_input == 'Percent of Recieved PPP Loans (%)':
+    if user_input == 'Percent of Received PPP Loans (%)':
         fig = createFig_Map_Loans_Precent_by_State(Heat_Map_Percent_Loans_Received_Quantity)
 
-    elif user_input == 'Cumulative Amount of PPP Loans Recieved ($)':
+    elif user_input == 'Cumulative Amount of PPP Loans Received ($)':
         fig = createFig_Map_Loans_Dollar_Amount_by_State(Heat_Map_Dollar_Amount_of_Loans_Received)
 
     elif user_input == 'Percent of Borrowers per Businesses by State (%)':

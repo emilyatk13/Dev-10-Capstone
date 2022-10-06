@@ -58,7 +58,7 @@ def createFig_Map_Loans_Precent_by_State(df):
     locationmode = "USA-states"))
 
     fig.update_layout(
-    title_text = 'Percent of Loans Revieved by State',
+    title_text = 'Percent of Loans Received by State',
     geo_scope='usa', # limite map scope to USA
     )
     fig.update_layout(paper_bgcolor = '#DCE4E6', plot_bgcolor = '#DCE4E6')
@@ -243,7 +243,7 @@ def createFig_Map_Loans_Dollar_Amount_by_State(df):
     ))
 
     fig.update_layout(
-    title_text = 'Loans Revieved by State in Billions of Dollars',
+    title_text = 'Loans Received by State in Billions of Dollars',
     geo_scope='usa', # limite map scope to USA
     )
     fig.update_layout(paper_bgcolor= '#DCE4E6')
@@ -267,7 +267,7 @@ def createFig_Map_Percent_of_Borrwers_to_Businesses(df):
     ))
 
     fig.update_layout(
-    title_text = 'Percent of Borrowers who recieved PPP Loans per Total Number of Businesses by State',
+    title_text = 'Percent of Borrowers who received PPP Loans per Total Number of Businesses by State',
     geo_scope='usa', # limite map scope to USA
     )
     fig.update_layout(paper_bgcolor = '#DCE4E6', plot_bgcolor = '#DCE4E6')
